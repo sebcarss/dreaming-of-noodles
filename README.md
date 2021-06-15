@@ -1,3 +1,7 @@
+# rsc-blog-cooking
+
+This is my personal recipe blog and food diary that allows me to capture my thoughts on my journey into the wonderful world of food discovery. 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
