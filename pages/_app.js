@@ -1,4 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
+import Head from 'next/head'
 
 /* 
  Next.js uses this component to initialise the pages. It can be overridden
@@ -11,7 +13,14 @@ import '../styles/globals.css'
 */
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  ) 
 }
 
 export default MyApp

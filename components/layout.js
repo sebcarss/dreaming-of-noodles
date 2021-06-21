@@ -2,55 +2,44 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./layout.module.css";
 
-const name = "Seb Carss";
+const title = "Recipes by Seb";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Next.js blog demo"
-        />
+        <meta charset="utf-8" />
+        <meta name="description" content="Seb Carss' personal recipe diary" />
+        <meta name="author" content="Seb Carss" />
+        <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
       </Head>
-      <header className={styles.header}>
+      <header className="row">
         {home ? (
           <>
-            <img
-              src="/images/ramen-unsplash.jpg"
-              alt={name}
-              className={styles.headerImage}        
-            />
-            <h1>{name}'s Blog</h1>
+            <h1 className="col-12">{title}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/ramen-unsplash.jpg"
-                  alt={name}
-                  className={styles.headerImage}
-                />
-              </a>
-            </Link>
-            <h2>
+            <h2 className="col-12">
               <Link href="/">
-                <a>{name}</a>
+                <a>{title}</a>
               </Link>
             </h2>
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </div>
-      )}
+      <main className="row">
+          <div className="col-3">
+              Left Hand Nav
+          </div>
+          <div className="col-6">
+            {children}
+          </div>
+          <div className="col-3">
+              {/* Leaving empty to create space at the side */}
+          </div>
+      </main>
     </div>
   );
 }
