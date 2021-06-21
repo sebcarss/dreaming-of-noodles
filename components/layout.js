@@ -18,7 +18,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/headerImage.jpg"
+              src="/images/ramen-unsplash.jpg"
               alt={name}
               className={styles.headerImage}        
             />
