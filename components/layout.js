@@ -9,7 +9,7 @@ export default function Layout({ children, home }) {
     <div className="container">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content="Seb Carss' personal recipe diary" />
         <meta name="author" content="Seb Carss" />
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
