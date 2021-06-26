@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
-import styles from "./layout.module.css";
-
-const title = "Recipes by Seb";
+import Header from "./header"
+import Footer from "./footer"
 
 export default function Layout({ children, home }) {
   return (
@@ -14,32 +12,19 @@ export default function Layout({ children, home }) {
         <meta name="author" content="Seb Carss" />
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
       </Head>
-      <header className="row">
-        {home ? (
-          <>
-            <h1 className="col-12">{title}</h1>
-          </>
-        ) : (
-          <>
-            <h2 className="col-12">
-              <Link href="/">
-                <a>{title}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
+      <Header />
       <main className="row">
-          <div className="col-3">
+          <div className="col-md-3">
               Left Hand Nav
           </div>
-          <div className="col-6">
+          <div className="col-md-6">
             {children}
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
               {/* Leaving empty to create space at the side */}
           </div>
       </main>
+      <Footer />
     </div>
   );
 }
