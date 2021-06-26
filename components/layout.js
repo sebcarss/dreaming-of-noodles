@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
         <meta name="author" content="Seb Carss" />
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
       </Head>
-      <Header />
+      <Header home={home} />
       <main className="row">
           <div className="col-md-3">
               Left Hand Nav

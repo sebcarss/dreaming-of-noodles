@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header({ children, home }) {
+export default function Header({ home }) {
   const title = "Recipes by Seb";
 
   return (
