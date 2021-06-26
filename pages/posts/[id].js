@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Ingredients from "../../components/ingredients";
+import Method from "../../components/method"
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -20,11 +21,6 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
-  const instructions = postData.instructions;
-  const instructionsList = instructions.map(function (instruction, index) {
-    return <li key={index}>{instruction}</li>;
-  });
-
   return (
     <Layout>
       <div>
@@ -32,11 +28,7 @@ export default function Post({ postData }) {
         <div>{postData.date}</div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         <Ingredients postData={postData} />
-        {/* TODO Move this to a Method component */}
-        <div>
-          <h2>Method</h2>
-          <ol>{instructionsList}</ol>
-        </div>
+        <Method postData={postData} />
       </div>
     </Layout>
   );

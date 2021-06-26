@@ -20,9 +20,6 @@ export default function Layout({ children, home }) {
           <div className="col-md-6">
             {children}
           </div>
-          <div className="col-md-3">
-              {/* Leaving empty to create space at the side */}
-          </div>
       </main>
       <Footer />
     </div>
