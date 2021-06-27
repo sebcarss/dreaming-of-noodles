@@ -1,7 +1,7 @@
 ---
 title: 36% Wholewheat Tin Loaf
 date: '2020-06-10'
-tags: bread
+tags: ['bread']
 published: true
 
 ingredients:
