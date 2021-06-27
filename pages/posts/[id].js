@@ -3,6 +3,8 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Ingredients from "../../components/ingredients";
 import Method from "../../components/method"
 
+// TODO Add title for page in head
+
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   return {

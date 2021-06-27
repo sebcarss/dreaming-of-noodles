@@ -1,7 +1,15 @@
 import Head from "next/head";
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./header";
+import Footer from "./footer";
+import Navigation from "./navigation";
+import PostsList from "./posts-list"
 
+/**
+ * 
+ * @param {JSXObject} children Default children JSX to be rendered
+ * @param {boolean} home Set to true on the homepage
+ * @returns The main layout for all pages, including header, middle and footer
+ */
 export default function Layout({ children, home }) {
   return (
     <div className="container">
@@ -14,12 +22,9 @@ export default function Layout({ children, home }) {
       </Head>
       <Header home={home} />
       <main className="row">
-          <div className="col-md-3">
-              Left Hand Nav
-          </div>
-          <div className="col-md-6">
-            {children}
-          </div>
+        {/* TODO Should Navigation and PostsList exist in the same row? */}
+        <Navigation />
+        <PostsList children={children} />
       </main>
       <Footer />
     </div>
