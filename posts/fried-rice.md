@@ -1,8 +1,8 @@
 ---
 title: Fried Rice
 date: '2016-10-24'
-tags: ['Chinese Rice Dish']
-published: true
+tags: ['Chinese']
+published: false
 
 ingredients:
  - Cooked Rice
