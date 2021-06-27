@@ -1,7 +1,7 @@
 ---
 title: Fried Rice
 date: '2016-10-24'
-tags: ['Chinese']
+tags: ['Chinese Rice Dish']
 published: true
 
 ingredients:

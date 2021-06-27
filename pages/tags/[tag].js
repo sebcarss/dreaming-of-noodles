@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
-import { getAllTags } from "../../lib/tags";
+import { getAllTags, kebabCase, titleCase } from "../../lib/tags";
 import PostsList from "../../components/posts-list";
 
 export async function getStaticPaths() {
@@ -19,22 +19,24 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const allPosts = await getSortedPostsData();
   const filteredPosts = allPosts.filter((post) => {
-    console.log(post.tags);
-    return post.tags.includes(params.tag);
+    const formattedTags = post.tags.map((tag) => kebabCase(tag));
+    console.log("formattedTags: ", formattedTags);
+    return formattedTags.includes(params.tag);
   });
+
+  const tagDisplayName = titleCase(params.tag)
+
+  console.log("tagDisplayName: ", tagDisplayName);
 
   return {
     props: {
       posts: filteredPosts,
-      tag: params.tag,
+      tag: tagDisplayName,
     },
   };
 }
 
 export default function Tag({ posts, tag }) {
-  // TODO Get the tag from the path and search all posts data to render PostsList
-  console.log(posts);
-
   return (
     <Layout>
       <h1>{tag} Recipes</h1>
