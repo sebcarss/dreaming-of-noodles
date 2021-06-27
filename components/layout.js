@@ -2,7 +2,6 @@ import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 import Navigation from "./navigation";
-import PostsList from "./posts-list"
 
 /**
  * 
@@ -22,9 +21,8 @@ export default function Layout({ children, home }) {
       </Head>
       <Header home={home} />
       <main className="row">
-        {/* TODO Should Navigation and PostsList exist in the same row? */}
         <Navigation />
-        <PostsList children={children} />
+        {children}
       </main>
       <Footer />
     </div>
