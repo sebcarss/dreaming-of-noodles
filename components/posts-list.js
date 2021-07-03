@@ -14,9 +14,7 @@ export default function PostsLists({ allPostsData }) {
   return (
     <div className="col-md-6">
       <div>
-        <ul>
-          {posts}
-        </ul>
+        <ul>{posts}</ul>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Footer from "./footer";
 import Navigation from "./navigation";
 
 /**
- * 
+ *
  * @param {JSXObject} children Default children JSX to be rendered
  * @param {boolean} home Set to true on the homepage
  * @returns The main layout for all pages, including header, middle and footer

@@ -1,14 +1,14 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Ingredients from "../../components/ingredients";
-import Method from "../../components/method"
+import Method from "../../components/method";
 
 // TODO Add title for page in head
 
 /**
- * 
- * @param {*} param0 
- * @returns 
+ *
+ * @param {*} param0
+ * @returns
  */
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -20,10 +20,10 @@ export async function getStaticProps({ params }) {
 }
 
 /**
- * Gets the paths of the pages that Next will build statically during build time. 
- * The IDs are the filenames without the `.md` suffix that are in the /posts/ directory. 
+ * Gets the paths of the pages that Next will build statically during build time.
+ * The IDs are the filenames without the `.md` suffix that are in the /posts/ directory.
  * /posts/ is not part of the paths returned.
- * 
+ *
  * e.g. paths: [
  *  {
  *    params: {
@@ -31,12 +31,12 @@ export async function getStaticProps({ params }) {
  *    }
  *  }
  * ]
- * 
+ *
  * @returns the array of post IDs
  */
 export async function getStaticPaths() {
   const paths = getAllPostIds();
-  console.log("paths: ", paths)
+  console.log("paths: ", paths);
   return {
     paths,
     fallback: false,

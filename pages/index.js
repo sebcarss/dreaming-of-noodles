@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-import PostsList from '../components/posts-list'
+import PostsList from "../components/posts-list";
 
 // TODO Add title for page in head
 
@@ -18,5 +18,5 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <PostsList allPostsData={allPostsData} />
     </Layout>
-  )
+  );
 }
