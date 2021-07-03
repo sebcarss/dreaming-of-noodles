@@ -1,4 +1,5 @@
-import Link from "next/Link";
+import Link from "next/link";
+
 export default function PostsLists({ allPostsData }) {
   const posts = allPostsData.map(({ id, date, title }, index) => (
     <li key={index}>
