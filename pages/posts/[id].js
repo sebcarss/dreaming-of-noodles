@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Ingredients from "../../components/ingredients";
 import Method from "../../components/method";
+import { getAllTagLinkData } from "../../lib/tags"
 
 // TODO Add title for page in head
 
@@ -12,9 +13,12 @@ import Method from "../../components/method";
  */
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+  const tagLinkData = await getAllTagLinkData();
+
   return {
     props: {
       postData,
+      tagLinkData,
     },
   };
 }
@@ -43,9 +47,9 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, tagLinkData }) {
   return (
-    <Layout>
+    <Layout tagLinkData={tagLinkData}>
       <div>
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>

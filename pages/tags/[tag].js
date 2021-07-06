@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
-import { getAllTags, kebabCase, titleCase } from "../../lib/tags";
+import { getAllTags, kebabCase, titleCase, getAllTagLinkData } from "../../lib/tags";
 import PostsList from "../../components/posts-list";
 
 /**
@@ -59,19 +59,23 @@ export async function getStaticProps({ params }) {
   // The name to display on the website as in title format
   const tagDisplayName = titleCase(params.tag);
 
+  // Get all tags for the navigation
+  const tagLinkData = await getAllTagLinkData();
+
   return {
     props: {
       posts: filteredPosts,
       tag: tagDisplayName,
+      tagLinkData: tagLinkData,
     },
   };
 }
 
-export default function Tag({ posts }) {
+export default function Tag({ posts, tagLinkData }) {
   // TODO Get the count of posts with this tag and display on site.
 
   return (
-    <Layout>
+    <Layout tagLinkData={tagLinkData}>
       <h1>Bread Recipes</h1>
       <PostsList allPostsData={posts} />
     </Layout>

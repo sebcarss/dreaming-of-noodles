@@ -9,7 +9,7 @@ import Navigation from "./navigation";
  * @param {boolean} home Set to true on the homepage
  * @returns The main layout for all pages, including header, middle and footer
  */
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, tagLinkData }) {
   return (
     <div className="container">
       <Head>
@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
       </Head>
       <Header home={home} />
       <main className="row">
-        <Navigation />
+        <Navigation tagLinkData={tagLinkData}/>
         {children}
       </main>
       <Footer />
