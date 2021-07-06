@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watch"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",
@@ -18,7 +19,9 @@
     "remark-html": "^13.0.1"
   },
   "devDependencies": {
+    "babel-jest": "^27.0.6",
     "eslint": "^7.30.0",
-    "eslint-config-next": "^11.0.1"
+    "eslint-config-next": "^11.0.1",
+    "jest": "^27.0.6"
   }
 }
