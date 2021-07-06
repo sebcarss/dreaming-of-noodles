@@ -5,8 +5,6 @@ import Link from "next/link";
 // import { getAllTags, kebabCase, titleCase } from "../lib/tags";
 
 export default function Navigation({ tagLinkData }) {
-  console.log("Navigation tags: ", tagLinkData)
-
   const tagLinks = tagLinkData.map((tagData, index) => {
     const path = "/tags/" + tagData.slug;
 
