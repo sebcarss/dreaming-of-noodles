@@ -12,8 +12,6 @@ import { getAllTagLinkData } from "../../lib/tags"
  * @returns
  */
 export async function getStaticProps({ params }) {
-  console.log("info - [id].js:getStaticProps")
-
   const postData = await getPostData(params.id);
   const tagLinkData = await getAllTagLinkData();
 
@@ -41,10 +39,7 @@ export async function getStaticProps({ params }) {
  * @returns the array of post IDs
  */
 export async function getStaticPaths() {
-  console.log("info - [id].js:getStaticPaths")
-
   const paths = getAllPostIds();
-  console.log("paths: ", paths);
   return {
     paths,
     fallback: false,

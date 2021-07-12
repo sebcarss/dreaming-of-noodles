@@ -6,8 +6,6 @@ import { getAllTagLinkData } from "../lib/tags";
 // TODO Add title for page in head
 
 export async function getStaticProps() {
-  console.log("info - index.js:getStaticProps")
-  
   const allPostsData = getSortedPostsData();
   const tagLinkData = await getAllTagLinkData();
 

@@ -16,8 +16,6 @@ import PostsList from "../../components/posts-list";
  * @returns list of paths by tag id, e.g.
  */
 export async function getStaticPaths() {
-  console.log("info - [tag].js:getStaticPaths")
-
   const tags = await getAllTags();
 
   // Create an array of tag names, e.g. ['bread','chinese']
@@ -25,15 +23,12 @@ export async function getStaticPaths() {
 
   // Map the array to a new array with paths, e.g. [{params: {tag: bread}}, {params: {tag: chinese}}]
   const paths = tagNames.map((name) => {
-    console.log("tag: ", name);
     return {
       params: {
         tag: name,
       },
     };
   });
-
-  console.log("paths: ", paths);
 
   return {
     paths: paths,
@@ -49,8 +44,6 @@ export async function getStaticPaths() {
  * @returns props that are passed to the page component
  */
 export async function getStaticProps({ params }) {
-  console.log("info - [tag].js:getStaticProps")
-
   // Get all posts from the /posts/ directory
   const allPosts = await getSortedPostsData();
 
