@@ -9,11 +9,17 @@ export default function Navigation({ tagLinkData }) {
     const path = "/tags/" + tagData.slug;
 
     return (
-      <Link key={index} href={path}>
-        <a>{tagData.title}</a>
-      </Link>
+      <li className="nav-item">
+        <Link key={index} href={path}>
+          <a className="nav-link">{tagData.title}</a>
+        </Link>
+      </li>
     );
   });
 
-  return <div className="col-md-3">{tagLinks}</div>;
+  return (
+      <nav className="navbar navbar-expand navbar-light bg-light flex-column flex-md-row bd-navbar">
+        <ul className="navbar-nav">{tagLinks}</ul>
+      </nav>
+    );
 }

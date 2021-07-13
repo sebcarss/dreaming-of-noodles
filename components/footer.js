@@ -1,9 +1,8 @@
 export default function Footer() {
   return (
-    <div>
-      <footer className="row">
-        <div className="col-12">Seb Carss</div>
-      </footer>
-    </div>
+    <footer>
+      <hr />
+      <div className="lead text-center text-muted">Recipes by Seb Carss</div>
+    </footer>
   );
 }
