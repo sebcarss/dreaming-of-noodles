@@ -1,25 +1,24 @@
-import Link from "next/link";
-
-// importing here fails - I think it's because it is generated on the browser and not on the server
-// how can I generate the navigation server side efficiently?
-// import { getAllTags, kebabCase, titleCase } from "../lib/tags";
+import Navbar from 'react-bootstrap/navbar'
+import Nav from 'react-bootstrap/nav'
 
 export default function Navigation({ tagLinkData }) {
   const tagLinks = tagLinkData.map((tagData, index) => {
     const path = "/tags/" + tagData.slug;
 
     return (
-      <li className="nav-item">
-        <Link key={index} href={path}>
-          <a className="nav-link">{tagData.title}</a>
-        </Link>
-      </li>
+      <Nav.Link href={path}>{tagData.title}</Nav.Link>
     );
   });
 
   return (
-      <nav className="navbar navbar-expand navbar-light bg-light flex-column flex-md-row bd-navbar">
-        <ul className="navbar-nav">{tagLinks}</ul>
-      </nav>
+      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+          <Navbar.Brand href="/" className="mx-2">In Search of Ramen</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              {tagLinks}
+            </Nav>
+          </Navbar.Collapse>
+      </Navbar>
     );
 }

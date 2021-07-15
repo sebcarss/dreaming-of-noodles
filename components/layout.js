@@ -2,6 +2,8 @@ import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 import Navigation from "./navigation";
+import Container from 'react-bootstrap/container'
+import Row from 'react-bootstrap/row'
 
 /**
  *
@@ -11,7 +13,7 @@ import Navigation from "./navigation";
  */
 export default function Layout({ children, home, tagLinkData }) {
   return (
-    <div className="container">
+    <Container>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
@@ -20,11 +22,13 @@ export default function Layout({ children, home, tagLinkData }) {
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
       </Head>
       <Header home={home} />
-      <main className="row">
-        <Navigation tagLinkData={tagLinkData}/>
-        {children}
-      </main>
+        <Row>
+          <Navigation tagLinkData={tagLinkData} />
+          <main className="mt-5">
+            {children}
+          </main>
+        </Row>
       <Footer />
-    </div>
+    </Container>
   );
 }

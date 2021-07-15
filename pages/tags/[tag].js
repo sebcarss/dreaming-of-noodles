@@ -68,12 +68,12 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Tag({ posts, tagLinkData }) {
+export default function Tag({ posts, tagLinkData, tag }) {
   // TODO Get the count of posts with this tag and display on site.
 
   return (
     <Layout tagLinkData={tagLinkData}>
-      <h1>Bread Recipes</h1>
+      <h1 className="mt-3">{tag} Recipes</h1>
       <PostsList allPostsData={posts} />
     </Layout>
   );
