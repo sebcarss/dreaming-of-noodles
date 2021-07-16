@@ -6,7 +6,7 @@ export default function Navigation({ tagLinkData }) {
     const path = "/tags/" + tagData.slug;
 
     return (
-      <Nav.Link href={path}>{tagData.title}</Nav.Link>
+      <Nav.Link key={index} href={path}>{tagData.title}</Nav.Link>
     );
   });
 

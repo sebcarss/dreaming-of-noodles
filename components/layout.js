@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Header from "./header";
 import Footer from "./footer";
 import Navigation from "./navigation";
 import Container from 'react-bootstrap/container'
@@ -9,9 +8,9 @@ import Row from 'react-bootstrap/row'
  *
  * @param {JSXObject} children Default children JSX to be rendered
  * @param {boolean} home Set to true on the homepage
- * @returns The main layout for all pages, including header, middle and footer
+ * @returns The main layout for all pages
  */
-export default function Layout({ children, home, tagLinkData }) {
+export default function Layout({ children, tagLinkData }) {
   return (
     <Container>
       <Head>
@@ -21,13 +20,12 @@ export default function Layout({ children, home, tagLinkData }) {
         <meta name="author" content="Seb Carss" />
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
       </Head>
-      <Header home={home} />
-        <Row>
-          <Navigation tagLinkData={tagLinkData} />
-          <main className="mt-5">
-            {children}
-          </main>
-        </Row>
+      <Row>
+        <Navigation tagLinkData={tagLinkData} />
+        <main className="mt-5">
+          {children}
+        </main>
+      </Row>
       <Footer />
     </Container>
   );

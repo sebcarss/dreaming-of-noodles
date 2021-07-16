@@ -49,7 +49,7 @@ export async function getStaticPaths() {
 export default function Post({ postData, tagLinkData }) {
   return (
     <Layout tagLinkData={tagLinkData}>
-      <div>
+      <div className="mt-3">
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

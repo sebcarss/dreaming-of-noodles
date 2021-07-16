@@ -1,30 +1,31 @@
-import Link from "next/link";
+import Link from 'next/link'
+import Card from 'react-bootstrap/card'
+import Row from 'react-bootstrap/row'
+import Col from 'react-bootstrap/col'
 
 export default function PostsLists({ allPostsData }) {
-  const posts = allPostsData.map(({ id, date, title }, index) => (
-    <li key={index} className="card bg-dark text-white mb-3 mt-3" style={{maxWidth: "540px"}}>
-      <Link href={`/posts/${id}`} className="">
-        <a>
-          <div>
-            <img
-              src="https://cookingwithscarss.files.wordpress.com/2017/08/20170825_205153.jpg"
-              className="card-img-top"
-              alt="Temp..."
-            />
-          </div>
-          <div className="text-center">
-            <h5 className="card-title">{title}</h5>
-            <p className="text-muted">{date}</p>
-          </div>
-        </a>
-      </Link>
-    </li>
-  ));
+  const posts = allPostsData.map(({ id, date, title, image }, index) => {
+    const imagePath = `/images/${image}`
+    
+    return (
+      <Col key={index}>
+        <Link href={`/posts/${id}`}>
+          <a>
+            <Card bg="dark" text="white" style={{ width: 'auto' }}>
+              <Card.Img variant="top" src={imagePath} />
+              <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text className="text-muted">{date}</Card.Text>
+              </Card.Body>
+            </Card>
+          </a>
+        </Link>
+      </Col>
+  )});
 
   return (
-    <div>
-      {/* TODO Continue playing with the card columns to make them responsive */}
-      <ul className="card-group">{posts}</ul> 
-    </div>
+    <Row xs={1} md={2} lg={3} xl={3} className="g-1">
+      {posts}
+    </Row>
   );
 }
