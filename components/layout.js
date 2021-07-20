@@ -10,11 +10,12 @@ import Row from 'react-bootstrap/Row'
  * @param {boolean} home Set to true on the homepage
  * @returns The main layout for all pages
  */
-export default function Layout({ children, tagLinkData }) {
+export default function Layout({ children, tagLinkData, title }) {
   return (
     <Container>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="description" content="Seb Carss' personal recipe diary" />
         <meta name="author" content="Seb Carss" />

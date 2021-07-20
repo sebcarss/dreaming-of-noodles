@@ -4,8 +4,6 @@ import Ingredients from "../../components/ingredients";
 import Method from "../../components/method";
 import { getAllTagLinkData } from "../../lib/tags"
 
-// TODO Add title for page in head
-
 /**
  *
  * @param {*} param0
@@ -48,7 +46,7 @@ export async function getStaticPaths() {
 
 export default function Post({ postData, tagLinkData }) {
   return (
-    <Layout tagLinkData={tagLinkData}>
+    <Layout tagLinkData={tagLinkData} title={postData.title} >
       <div className="mt-3">
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>
