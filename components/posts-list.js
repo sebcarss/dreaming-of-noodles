@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Card from 'react-bootstrap/card'
-import Row from 'react-bootstrap/row'
-import Col from 'react-bootstrap/col'
+import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default function PostsLists({ allPostsData }) {
   const posts = allPostsData.map(({ id, date, title, image }, index) => {

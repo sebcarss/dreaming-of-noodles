@@ -1,5 +1,5 @@
-import Navbar from 'react-bootstrap/navbar'
-import Nav from 'react-bootstrap/nav'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 export default function Navigation({ tagLinkData }) {
   const tagLinks = tagLinkData.map((tagData, index) => {

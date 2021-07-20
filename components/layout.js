@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Footer from "./footer";
 import Navigation from "./navigation";
-import Container from 'react-bootstrap/container'
-import Row from 'react-bootstrap/row'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 
 /**
  *

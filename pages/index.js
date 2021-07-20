@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import PostsList from "../components/posts-list";
 import { getAllTagLinkData } from "../lib/tags";
-import Container from 'react-bootstrap/container'
+import Container from 'react-bootstrap/Container'
 
 // TODO Add title for page in head
 
