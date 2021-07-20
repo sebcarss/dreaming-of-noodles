@@ -12,7 +12,7 @@ export default function Navigation({ tagLinkData }) {
 
   return (
       <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-          <Navbar.Brand href="/" className="mx-2">In Search of Ramen</Navbar.Brand>
+          <Navbar.Brand href="/" className="mx-2">Dreaming of Noodles</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
