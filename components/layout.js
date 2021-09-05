@@ -21,6 +21,12 @@ export default function Layout({ children, title }) {
         <meta name="description" content="Seb Carss' personal recipe diary" />
         <meta name="author" content="Seb Carss" />
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
+        <link 
+          rel="preload"
+          href="/fonts/Raleway/Raleway-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <Row>
         <Navigation/>

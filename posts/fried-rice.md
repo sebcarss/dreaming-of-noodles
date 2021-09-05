@@ -2,7 +2,7 @@
 title: Fried Rice
 date: '2016-10-24'
 tags: ['Chinese']
-image: beef-tantanmen-ramen.jpg
+image: fried-rice.jpeg
 published: false
 ---
 

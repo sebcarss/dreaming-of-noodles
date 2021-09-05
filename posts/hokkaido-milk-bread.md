@@ -2,8 +2,8 @@
 title: Hokkaido Milk Bread
 date: '2021-07-13'
 collection: 'Hokkaido'
-tags: ['bread']
-image: beef-tantanmen-ramen.jpg
+tags: ['bread', 'japan']
+image: 'hokkaido-milk-bread.jpeg'
 published: false 
 ---
 

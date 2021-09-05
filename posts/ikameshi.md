@@ -1,9 +1,10 @@
 ---
-title: Ikameshi (烏賊飯) - Squid Stuffed with Rice
+title: Ikameshi - Squid Stuffed with Rice
+subtitle: 烏賊飯
 date: '2021-07-15'
 collection: hokkaido
 tags: ['hokkaido', 'squid', 'rice', 'japan']
-image: beef-tantanmen-ramen.jpg
+image: beef-tantanmen-ramen.jpeg
 published: false
 ---
 

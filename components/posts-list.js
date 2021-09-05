@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+const cardStyle = { width: 'auto', borderRadius: 0 }
+
 export default function PostsLists({ allPostsData }) {
   const posts = allPostsData.map(({ id, date, title, image }, index) => {
     const imagePath = `/images/${image}`
@@ -11,8 +13,8 @@ export default function PostsLists({ allPostsData }) {
       <Col key={index}>
         <Link href={`/posts/${id}`}>
           <a>
-            <Card bg="dark" text="white" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src={imagePath} />
+            <Card bg="dark" text="white" style={cardStyle}>
+              <Card.Img variant="top" src={imagePath} style={cardStyle} />
               <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text className="text-muted">{date}</Card.Text>
