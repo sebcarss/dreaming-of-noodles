@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row'
  * @param {boolean} home Set to true on the homepage
  * @returns The main layout for all pages
  */
-export default function Layout({ children, tagLinkData, title }) {
+export default function Layout({ children, title }) {
   return (
     <Container>
       <Head>
@@ -23,7 +23,7 @@ export default function Layout({ children, tagLinkData, title }) {
         <meta name="keywords" content="Recipes, Recipe, Cooking, Baking" />
       </Head>
       <Row>
-        <Navigation tagLinkData={tagLinkData} />
+        <Navigation/>
         <main className="mt-5">
           {children}
         </main>

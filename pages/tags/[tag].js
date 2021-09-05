@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
-import { getAllTags, kebabCase, titleCase, getAllTagLinkData } from "../../lib/tags";
+import { getAllTags, kebabCase, titleCase } from "../../lib/tags";
 import PostsList from "../../components/posts-list";
 
 /**
@@ -56,25 +56,21 @@ export async function getStaticProps({ params }) {
   // The name to display on the website as in title format
   const tagDisplayName = titleCase(params.tag);
 
-  // Get all tags for the navigation
-  const tagLinkData = await getAllTagLinkData();
-
   return {
     props: {
       posts: filteredPosts,
       tag: tagDisplayName,
-      tagLinkData: tagLinkData,
     },
   };
 }
 
-export default function Tag({ posts, tagLinkData, tag }) {
+export default function Tag({ posts, tag }) {
   // TODO Get the count of posts with this tag and display on site.
 
   const title = `${tag} Recipes`
 
   return (
-    <Layout tagLinkData={tagLinkData} title={title} >
+    <Layout title={title} >
       <h1 className="mt-3">{title}</h1>
       <PostsList allPostsData={posts} />
     </Layout>

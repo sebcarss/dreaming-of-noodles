@@ -2,7 +2,7 @@
 title: Traditional Baguette with Poolish Starter
 date: '2020-08-15'
 collection: 'Bread'
-tags: ['bread', 'poolish', baguette]
+tags: ['bread', 'poolish', 'baguette']
 image: baguette-with-poolish.jpg
 published: false
 ---

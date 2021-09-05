@@ -1,6 +1,5 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import { getAllTagLinkData } from "../../lib/tags"
 
 /**
  *
@@ -9,12 +8,10 @@ import { getAllTagLinkData } from "../../lib/tags"
  */
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-  const tagLinkData = await getAllTagLinkData();
 
   return {
     props: {
       postData,
-      tagLinkData,
     },
   };
 }
@@ -42,9 +39,9 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData, tagLinkData }) {
+export default function Post({ postData }) {
   return (
-    <Layout tagLinkData={tagLinkData} title={postData.title} >
+    <Layout title={postData.title} >
       <div className="mt-3">
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>
