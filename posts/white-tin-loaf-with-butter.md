@@ -2,7 +2,11 @@
 title: White Tin Loaf With Butter
 date: '2020-06-10'
 tags: ['bread']
+image: beef-tantanmen-ramen.jpg
 published: false
+---
+
+This white tin loaf is great for sandwiches as the addition of the butter makes this lovely and soft. I always make twice the amount that I need and then wrap the second loaf in a plastic bread bag, tie with a clip and pop in the freezer for when I run out of the first loaf, which usually isn't long. 
 
 ingredients:
  - 1000g Organic White Flour 100.0%
@@ -24,6 +28,3 @@ instructions:
  - Cover with a tea towel, or place in a large proofing bag (I use a Le Creuset casserole dish to stop the air getting to it and a cake carrier). Leave for around 1 hour or until it is just about to bulge over the side like a mushroom. 
  - Pre-heat the oven to 210℃ and place both tins in for 30mins. 
  - Take out and cool on a wire rack.
----
-
-This white tin loaf is great for sandwiches as the addition of the butter makes this lovely and soft. I always make twice the amount that I need and then wrap the second loaf in a plastic bread bag, tie with a clip and pop in the freezer for when I run out of the first loaf, which usually isn't long. 

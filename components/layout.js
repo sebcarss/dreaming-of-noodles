@@ -14,6 +14,7 @@ export default function Layout({ children, tagLinkData, title }) {
   return (
     <Container>
       <Head>
+        {/* TODO Get a proper favicon made and swap this one */}
         <link rel="icon" href="/favicon.ico" />
         <title>{title}</title>
         <meta charSet="utf-8" />

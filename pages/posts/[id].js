@@ -1,7 +1,5 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import Ingredients from "../../components/ingredients";
-import Method from "../../components/method";
 import { getAllTagLinkData } from "../../lib/tags"
 
 /**
@@ -50,9 +48,7 @@ export default function Post({ postData, tagLinkData }) {
       <div className="mt-3">
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <Ingredients postData={postData} />
-        <Method postData={postData} />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />  
       </div>
     </Layout>
   );

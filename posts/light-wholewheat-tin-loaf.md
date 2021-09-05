@@ -2,7 +2,11 @@
 title: 36% Wholewheat Tin Loaf
 date: '2020-06-10'
 tags: ['bread']
+image: beef-tantanmen-ramen.jpg
 published: false
+---
+
+This quick-rise tin loaf makes a lightly flavoured loaf as well as soft sandwich rolls. Both are perfect for lunches as they are soft and allow the fillings to be the star of the show. 
 
 ingredients:
  - 640g Organic White Flour 64.0%
@@ -14,7 +18,3 @@ ingredients:
 
 instructions:
  - Bake at 220℃ for 27 minutes, take out of the tin, turn upside down and bake for another 5 minutes.
-
----
-
-This quick-rise tin loaf makes a lightly flavoured loaf as well as soft sandwich rolls. Both are perfect for lunches as they are soft and allow the fillings to be the star of the show. 
