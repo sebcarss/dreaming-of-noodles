@@ -9,8 +9,8 @@ export default function Navigation() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link key='0' href='/tags/bread'>Bread</Nav.Link>
-              <Nav.Link key='1' href='/tags/japan'>Japan</Nav.Link>
-              <Nav.Link key='2' href='/tags'>Recipes by Tag</Nav.Link>
+              <Nav.Link key='1' href='/japan'>Japan</Nav.Link>
+              <Nav.Link key='2' href='/recipe-index'>Recipe Index</Nav.Link>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
