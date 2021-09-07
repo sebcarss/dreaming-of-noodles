@@ -1,5 +1,6 @@
 ---
 title: Traditional Baguette with Poolish Starter
+excerpt: "A lovely crispy baguette, which will take you back to France as soon as you hear the crunch of the crust under your knife. "
 date: '2020-08-15'
 tags: ['bread', 'poolish', 'baguette']
 image: baguette-with-poolish.jpeg
