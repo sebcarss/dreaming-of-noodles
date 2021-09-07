@@ -8,9 +8,8 @@ export default function Navigation() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link key='0' href='/tags/bread'>Bread</Nav.Link>
-              <Nav.Link key='1' href='/japan'>Japan</Nav.Link>
-              <Nav.Link key='2' href='/recipe-index'>Recipe Index</Nav.Link>
+              <Nav.Link key='0' href='/japan'>Japan</Nav.Link>
+              <Nav.Link key='1' href='/recipe-index'>Recipe Index</Nav.Link>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
