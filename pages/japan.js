@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 export default function Japan() {
-    const title = "Recipes from Japan"
+    const title = "Japan | World Food Tour"
 
     return (
         <Layout title={title}>
