@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import Container from 'react-bootstrap/Container'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -10,6 +10,16 @@ export default function Japan() {
     return (
         <Layout title={title}>
             <Container className="mt-3">
+                <Row>
+                    <Col>
+                        <Image
+                            alt="World Food Tour banner image"
+                            src="https://via.placeholder.com/1000x200.png?text=World+Food+Tour"
+                            width={1000}
+                            height={200}
+                        />
+                    </Col>
+                </Row>
                 <Row>
                     <h1>Japan</h1>
                 </Row>
