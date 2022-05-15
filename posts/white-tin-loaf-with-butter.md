@@ -2,8 +2,8 @@
 title: White Tin Loaf With Butter
 date: '2020-06-10'
 tags: ['bread']
-image: beef-tantanmen-ramen.jpg
-published: false
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/beef-tantanmen-ramen.jpeg'
+published: true
 ---
 
 This white tin loaf is great for sandwiches as the addition of the butter makes this lovely and soft. I always make twice the amount that I need and then wrap the second loaf in a plastic bread bag, tie with a clip and pop in the freezer for when I run out of the first loaf, which usually isn't long. 

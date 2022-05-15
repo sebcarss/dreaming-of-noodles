@@ -3,7 +3,8 @@ title: Traditional Baguette with Poolish Starter
 excerpt: "A lovely crispy baguette, which will take you back to France as soon as you hear the crunch of the crust under your knife. "
 date: '2020-08-15'
 tags: ['bread', 'poolish', 'baguette']
-image: https://cookingwithscarss.s3.eu-west-1.amazonaws.com/baguette/baguettes-with-boule.jpg
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/baguette-with-poolish.jpeg'
+#image: '/images/baguette-with-poolish.jpeg'
 published: true
 ---
 

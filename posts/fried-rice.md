@@ -3,7 +3,7 @@ title: Fried Rice
 excerpt: "A staple in China after a night where too much rice was cooked, this is perfect for some next day leftover scran."
 date: '2016-10-24'
 tags: ['Chinese']
-image: fried-rice.jpeg
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/fried-rice.jpeg'
 published: true
 ---
 

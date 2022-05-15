@@ -4,7 +4,7 @@ excerpt: "Super soft bread from the Northernmost prefecture in Japan, Hokkaido. 
 date: '2021-07-13'
 collection: 'Hokkaido'
 tags: ['bread', 'japan']
-image: 'hokkaido-milk-bread.jpeg'
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/hokkaido-milk-bread.jpeg'
 published: true 
 ---
 

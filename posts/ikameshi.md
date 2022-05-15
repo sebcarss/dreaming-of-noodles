@@ -5,7 +5,7 @@ excerpt: "This squid has been stuffed with rice and simmered in some lovely Japa
 date: '2021-07-15'
 collection: hokkaido
 tags: ['hokkaido', 'squid', 'rice', 'japan']
-image: beef-tantanmen-ramen.jpeg
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/beef-tantanmen-ramen.jpeg'
 published: true
 ---
 

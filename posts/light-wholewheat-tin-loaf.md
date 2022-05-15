@@ -2,8 +2,8 @@
 title: 36% Wholewheat Tin Loaf
 date: '2020-06-10'
 tags: ['bread']
-image: beef-tantanmen-ramen.jpg
-published: false
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/beef-tantanmen-ramen.jpeg'
+published: true
 ---
 
 This quick-rise tin loaf makes a lightly flavoured loaf as well as soft sandwich rolls. Both are perfect for lunches as they are soft and allow the fillings to be the star of the show. 
