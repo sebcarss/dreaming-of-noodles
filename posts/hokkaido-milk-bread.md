@@ -5,7 +5,7 @@ date: '2021-07-13'
 collection: 'Hokkaido'
 tags: ['bread', 'japan']
 image: 'hokkaido-milk-bread.jpeg'
-published: false 
+published: true 
 ---
 
 This bread is super soft and from Hokkaido.

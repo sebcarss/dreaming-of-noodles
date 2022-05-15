@@ -3,8 +3,8 @@ title: Traditional Baguette with Poolish Starter
 excerpt: "A lovely crispy baguette, which will take you back to France as soon as you hear the crunch of the crust under your knife. "
 date: '2020-08-15'
 tags: ['bread', 'poolish', 'baguette']
-image: baguette-with-poolish.jpeg
-published: false
+image: https://cookingwithscarss.s3.eu-west-1.amazonaws.com/baguette/baguettes-with-boule.jpg
+published: true
 ---
 
 This recipe makes 8 half-sized baguettes, which fit perfectly in a domestic oven, or if you prefer 4 half-sized baguettes and one boule as shown in the image. 

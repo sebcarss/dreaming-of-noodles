@@ -6,7 +6,7 @@ date: '2021-07-15'
 collection: hokkaido
 tags: ['hokkaido', 'squid', 'rice', 'japan']
 image: beef-tantanmen-ramen.jpeg
-published: false
+published: true
 ---
 
 Oh my, this blew my balls off!

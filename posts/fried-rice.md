@@ -4,7 +4,7 @@ excerpt: "A staple in China after a night where too much rice was cooked, this i
 date: '2016-10-24'
 tags: ['Chinese']
 image: fried-rice.jpeg
-published: false
+published: true
 ---
 
 This is something that I learned from David Chang and it changed the way I cooked fried rice forever. He added all the flavourings to the egg and then folded this into the cooked rice after it was fried with the rest of the ingredients. This meant that all the flavour stuck to all the ingredients... genius!
