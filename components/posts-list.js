@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'next/image'
 
-const cardStyle = { width: 'auto', borderRadius: 0, objectFit: 'none' }
+const cardStyle = { width: 'auto', borderRadius: 0}
 
 export default function PostsLists({ allPostsData }) {
   const posts = allPostsData.map(({ id, excerpt, title, image }, index) => {
