@@ -1,38 +1,46 @@
-# rsc-blog-cooking
+# Dreaming of Noodles
 
 This is my personal recipe blog and food diary that allows me to capture my thoughts on my journey into the wonderful world of food discovery. 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Prerequisites
+
+Node version: v17.5.0
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Run the development server and go to http://localhost:3000/
 npm run dev
-# or
-yarn dev
+
+# Run the build command to build the static site to the out directory
+npm run build
+
+# Run the start command to start the static site in a browser
+npm run start
+# This will also make the site available on your network so go to http://<ip>:3000/
+
+# Run the lint command to lint the code
+npm run lint
+
+# Run the test command to run the tests in watch mode
+npm run test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Adding a Recipe
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To add a recipe create a new markdown file in the `/posts/` directory with the following structure (example):
+    
+```markdown
+---
+title: Traditional Baguette with Poolish Starter
+excerpt: "A lovely crispy baguette, which will take you back to France as soon as you hear the crunch of the crust under your knife."
+date: '2020-08-15'
+tags: ['bread', 'poolish', 'baguette']
+image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/baguette-with-poolish.jpeg'
+published: true
+---
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You will need to add an image to the S3 bucket `dreamingofnoodles.s3.eu-west-1.amazonaws.com` with the `/images/` prefix. __Remember to make the image public.__
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The recipe shoud be written up in the markdown format, which will convert to HTML and be displayed on the site.
