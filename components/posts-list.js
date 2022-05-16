@@ -9,6 +9,7 @@ const cardStyle = { width: 'auto', borderRadius: 0}
 export default function PostsLists({ allPostsData }) {
   const posts = allPostsData.map(({ id, excerpt, title, image }, index) => {
     const imagePath = `${image}`
+    const imageAlt = `${title} - thumbnail`
     
     return (
       <Col key={index}>
@@ -16,7 +17,7 @@ export default function PostsLists({ allPostsData }) {
           <a>
             <Card bg="dark" text="white" style={cardStyle} className="h-100">
               {/* <Card.Img variant="top" src={imagePath} style={{cardStyle, layout: 'responsive'}} /> */}
-              <Image alt="Mountains" src={imagePath} width={300} height={200} layout="responsive"/>
+              <Image alt={imageAlt} src={imagePath} width={300} height={200} layout="responsive"/>
               <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text className="text-muted">{excerpt}</Card.Text>
