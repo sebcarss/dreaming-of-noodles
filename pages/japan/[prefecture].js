@@ -1,6 +1,6 @@
 
-import Layout from "../../../components/layout";
-import { titleCase, kebabCase } from "../../../lib/string-utils";
+import Layout from "../../components/layout";
+import { titleCase } from "../../lib/string-utils";
 
 export async function getStaticPaths() {
 
