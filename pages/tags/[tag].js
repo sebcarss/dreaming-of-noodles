@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
-import { getAllTags, kebabCase, titleCase } from "../../lib/tags";
+import { getAllTags } from "../../lib/tags";
+import { kebabCase, titleCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
 
 /**
