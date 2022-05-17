@@ -4,8 +4,28 @@ import Row from "react-bootstrap/Row";
 import Link from "next/link";
 import Col from "react-bootstrap/Col";
 import Image from "next/image";
+import { getSortedPostsData } from "../../lib/posts";
+import { kebabCase } from "../../lib/string-utils";
+import PostsList from "../../components/posts-list";
 
-export default function Japan() {
+export async function getStaticProps() {
+  // Get all posts from the /posts/ directory
+  const allPosts = await getSortedPostsData();
+
+  // Filter the posts for just the ones that have the japan as a tag
+  const japanFilteredPosts = allPosts.filter((post) => {
+    const kebabedTags = post.tags.map((tag) => kebabCase(tag));
+    return kebabedTags.includes("japan");
+  });
+
+  return {
+    props: {
+      posts: japanFilteredPosts,
+    },
+  };
+}
+
+export default function Japan({ posts }) {
   const title = "Japan | World Food Tour";
 
   return (
@@ -98,9 +118,7 @@ export default function Japan() {
             <h2>Japanese Recipes</h2>
           </Col>
         </Row>
-        {/* <PostsList allPostsData={posts} /> */}
-
-        <p>Add PostsList here for japan tags</p>
+        <PostsList allPostsData={posts} />
       </Container>
     </Layout>
   );
