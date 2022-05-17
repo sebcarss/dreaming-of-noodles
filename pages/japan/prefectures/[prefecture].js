@@ -1,5 +1,6 @@
 
 import Layout from "../../../components/layout";
+import { titleCase, kebabCase } from "../../../lib/string-utils";
 
 export async function getStaticPaths() {
 
@@ -27,9 +28,11 @@ export async function getStaticProps({ params }) {
 }
 
 export default function JapanPrefecture({ prefecture }) {
+    const prefectureDisplayName = titleCase(prefecture);
+
   return (
     <Layout>
-      <h1>{ prefecture }</h1>
+      <h1>{prefectureDisplayName}</h1>
     </Layout>
   );
 }
