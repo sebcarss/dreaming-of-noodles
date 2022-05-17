@@ -8,23 +8,41 @@ Node version: v17.5.0
 
 ## Getting Started
 
+### Local development 
+
 ```bash
 # Run the development server and go to http://localhost:3000/
 npm run dev
 
+# Run lint test
+npm run lint
+
+# Run unit tests
+npm run test
+```
+
+### Preparing a production build
+
+Open a terminal
+
+```bash
 # Run the build command to build the static site to the out directory
 npm run build
 
 # Run the start command to start the static site in a browser
 npm run start
 # This will also make the site available on your network so go to http://<ip>:3000/
-
-# Run the lint command to lint the code
-npm run lint
-
-# Run the test command to run the tests in watch mode
-npm run test
 ```
+
+Open a new terminal to run the end-to-end tests
+
+```bash
+# Run the e2e tests
+npm run cypress
+```
+
+When the Cypress window opens up run the e2e tests. 
+If all the tests succeed then create a PR in Github and Netlify will create a preview build automatically.
 
 ## Adding a Recipe
 

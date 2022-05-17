@@ -9,7 +9,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch",
+    "test": "jest",
     "cypress": "cypress open"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.7.0",
     "babel-jest": "^27.0.6",
-    "cypress": "^8.3.1",
+    "cypress": "^9.6.1",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
     "jest": "^27.0.6"
