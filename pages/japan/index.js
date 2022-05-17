@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import Container from 'react-bootstrap/Container'
 import Image from 'next/image'
 import Row from 'react-bootstrap/Row'

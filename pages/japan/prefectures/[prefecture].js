@@ -32,7 +32,7 @@ export default function JapanPrefecture({ prefecture }) {
 
   return (
     <Layout>
-      <h1>{prefectureDisplayName}</h1>
+        <h1 className="mt-3">{prefectureDisplayName}</h1>
     </Layout>
   );
 }
