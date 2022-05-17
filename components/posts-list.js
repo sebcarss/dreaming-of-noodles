@@ -16,7 +16,6 @@ export default function PostsLists({ allPostsData }) {
         <Link href={`/posts/${id}`}>
           <a>
             <Card bg="dark" text="white" style={cardStyle} className="h-100">
-              {/* <Card.Img variant="top" src={imagePath} style={{cardStyle, layout: 'responsive'}} /> */}
               <Image alt={imageAlt} src={imagePath} width={300} height={200} layout="responsive"/>
               <Card.Body>
                 <Card.Title>{title}</Card.Title>
