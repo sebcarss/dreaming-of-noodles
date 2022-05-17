@@ -21,6 +21,24 @@ npm run lint
 npm run test
 ```
 
+### Testing
+
+### Unit testing
+Unit testing is done with [Jest](https://facebook.github.io/jest/).
+
+Add your unit tests to the same location as the code which lives in the `/lib/`dir but name the test file with the same name as the file but with the `.test.js` extension.
+
+#### Component testing
+
+Component testing is done with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
+
+Add your unit tests to the same location as the component which lives in the `/component/` dir but name the test file with the same name as the file but with the `.test.js` extension.
+
+End-to-end testing is done with [Cypress](https://docs.cypress.io/guides/getting-started/introduction.html).
+
+Cypress tests live in the `/cypress/integration/` dir. Name the test file with the same name as the page but with the `.spec.js` extension.
+
+
 ### Preparing a production build
 
 Open a terminal
