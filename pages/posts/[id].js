@@ -1,5 +1,5 @@
 import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllPostIds, getPostMatterAndContent } from "../../lib/posts";
 
 /**
  *
@@ -7,7 +7,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
  * @returns
  */
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getPostMatterAndContent(params.id);
 
   return {
     props: {

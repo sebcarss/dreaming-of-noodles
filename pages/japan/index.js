@@ -4,13 +4,13 @@ import Row from "react-bootstrap/Row";
 import Link from "next/link";
 import Col from "react-bootstrap/Col";
 import Image from "next/image";
-import { getSortedPostsData } from "../../lib/posts";
+import { getSortedPostsFrontMatter } from "../../lib/posts";
 import { kebabCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
-  const allPosts = await getSortedPostsData();
+  const allPosts = await getSortedPostsFrontMatter();
 
   // Filter the posts for just the ones that have the japan as a tag
   const japanFilteredPosts = allPosts.filter((post) => {

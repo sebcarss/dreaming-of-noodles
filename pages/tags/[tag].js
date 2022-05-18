@@ -1,5 +1,5 @@
 import Layout from "../../components/layout";
-import { getSortedPostsData } from "../../lib/posts";
+import { getSortedPostsFrontMatter } from "../../lib/posts";
 import { getAllTags } from "../../lib/tags";
 import { kebabCase, titleCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
@@ -46,7 +46,7 @@ export async function getStaticPaths() {
  */
 export async function getStaticProps({ params }) {
   // Get all posts from the /posts/ directory
-  const allPosts = await getSortedPostsData();
+  const allPosts = await getSortedPostsFrontMatter();
 
   // Filter the posts for just the ones that have the tag name in from the path
   const filteredPosts = allPosts.filter((post) => {
