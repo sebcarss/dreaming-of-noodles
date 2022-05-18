@@ -1,6 +1,5 @@
 ---
 title: Ikameshi - Squid Stuffed with Rice
-subtitle: 烏賊飯
 excerpt: "This squid has been stuffed with rice and simmered in some lovely Japanese flavours for an umami rich flavour bomb to enjoy with a glass of sake."
 date: '2021-07-15'
 collection: hokkaido
