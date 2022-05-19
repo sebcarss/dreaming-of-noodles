@@ -8,23 +8,59 @@ Node version: v17.5.0
 
 ## Getting Started
 
+### Local development 
+
 ```bash
 # Run the development server and go to http://localhost:3000/
 npm run dev
 
+# Run lint test
+npm run lint
+
+# Run unit tests
+npm run test
+```
+
+### Testing
+
+### Unit testing
+Unit testing is done with [Jest](https://facebook.github.io/jest/).
+
+Add your unit tests to the same location as the code which lives in the `/lib/`dir but name the test file with the same name as the file but with the `.test.js` extension.
+
+#### Component testing
+
+Component testing is done with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
+
+Add your unit tests to the same location as the component which lives in the `/component/` dir but name the test file with the same name as the file but with the `.test.js` extension.
+
+End-to-end testing is done with [Cypress](https://docs.cypress.io/guides/getting-started/introduction.html).
+
+Cypress tests live in the `/cypress/integration/` dir. Name the test file with the same name as the page but with the `.spec.js` extension.
+
+
+### Preparing a production build
+
+Open a terminal
+
+```bash
 # Run the build command to build the static site to the out directory
 npm run build
 
 # Run the start command to start the static site in a browser
 npm run start
 # This will also make the site available on your network so go to http://<ip>:3000/
-
-# Run the lint command to lint the code
-npm run lint
-
-# Run the test command to run the tests in watch mode
-npm run test
 ```
+
+Open a new terminal to run the end-to-end tests
+
+```bash
+# Run the e2e tests
+npm run cypress
+```
+
+When the Cypress window opens up run the e2e tests. 
+If all the tests succeed then create a PR in Github and Netlify will create a preview build automatically.
 
 ## Adding a Recipe
 

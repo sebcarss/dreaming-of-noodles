@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsFrontMatter } from "../lib/posts";
 import PostsList from "../components/posts-list";
 import Container from 'react-bootstrap/Container'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostsFrontMatter();
   const title = "Dreaming of Noodles";
 
   return {

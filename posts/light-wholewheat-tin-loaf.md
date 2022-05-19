@@ -1,5 +1,6 @@
 ---
 title: 36% Wholewheat Tin Loaf
+excerpt: "Delicious tin loaf with a hint of cream cheese and a hint of honey."
 date: '2020-06-10'
 tags: ['bread']
 image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/beef-tantanmen-ramen.jpeg'
