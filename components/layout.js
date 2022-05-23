@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row'
  * @param {boolean} home Set to true on the homepage
  * @returns The main layout for all pages
  */
-export default function Layout({ children, title, preview }) {
+export default function Layout({ children, title }) {
   return (
     <Container>
       <Head>
@@ -29,7 +29,7 @@ export default function Layout({ children, title, preview }) {
         />
       </Head>
       <Row>
-        <Navigation preview={preview} />
+        <Navigation preview />
         <main className="mt-5">
           {children}
         </main>
