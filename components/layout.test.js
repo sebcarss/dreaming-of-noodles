@@ -3,12 +3,14 @@ import { render, screen } from '@testing-library/react'
 import Layout from './layout';
 
 const mockNavigation = jest.fn();
+// eslint-disable-next-line react/display-name
 jest.mock("./navigation", () => ({ preview }) => {
     mockNavigation(preview);
     return <mock-navigation preview={preview} />;
 });
 
 const mockFooter = jest.fn();
+// eslint-disable-next-line react/display-name
 jest.mock("./footer", () => () => {
     mockFooter();
     return <mock-footer />;

@@ -59,6 +59,7 @@ export default function Japan({ posts }) {
           {/* Remove this image and replace it with one that I have created instead of copying others */}
           <Col>
             <Image
+              alt="Map of Japan"
               src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/japanese-prefectures.webp"
               height="720"
               width="865"
