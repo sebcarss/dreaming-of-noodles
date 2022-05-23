@@ -15,9 +15,9 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData, title }) {
+export default function Home({ allPostsData, title, preview }) {
   return (
-    <Layout title={title} >
+    <Layout title={title} preview={preview} >
       <Container className="mt-3">
         <PostsList allPostsData={allPostsData} />
       </Container>
