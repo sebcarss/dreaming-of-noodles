@@ -1,8 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Layout from './layout';
-import { unmountComponentAtNode } from 'react-dom';
-import { act } from 'react-dom/test-utils';
 
 const mockNavigation = jest.fn();
 jest.mock("./navigation", () => ({ preview }) => {
@@ -16,23 +14,9 @@ jest.mock("./footer", () => () => {
     return <mock-footer />;
 });
 
-let container = null;
-beforeEach(() => {
-    // setup a DOM element as a render target
-    container = document.createElement("div");
-    document.body.appendChild(container);
-});
-
-afterEach(() => {
-    // cleanup on exiting
-    unmountComponentAtNode(container);
-    container.remove();
-    container = null;
-});
-
 describe('Layout', () => {
     it('renders correctly', () => {
-        render(<Layout title="Test Title" preview>Child HTML</Layout>, container);
+        render(<Layout title="Test Title" preview>Child HTML</Layout>);
         expect(mockNavigation).toHaveBeenCalledWith(true);
         expect(screen.getByText("Child HTML")).not.toBeNull();
         expect(mockFooter).toHaveBeenCalled();
