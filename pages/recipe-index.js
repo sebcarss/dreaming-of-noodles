@@ -39,7 +39,7 @@ export default function Tags({ tagLinkData }) {
                         Here you will find a list of all the recipes on the site by type so that you can easily find what you are looking for.
                     </p>
                 </Row>
-                <Row className="mb-3">
+                <Row className="mb-3" id="recipes-by-country-row">
                     <h2>Recipes by Country</h2>
                     <hr />
                     <Link href="/japan">
@@ -49,7 +49,7 @@ export default function Tags({ tagLinkData }) {
                         <a><Emoji symbol="🇰🇷" label="South Korean flag" />&nbsp;&nbsp;South Korean Recipes</a>
                     </Link> */}
                 </Row>
-                <Row>
+                <Row id="tags-row">
                     <h2>Tags</h2>
                     <hr />
                     <ul style={{ listStyleType: "none" }}>
