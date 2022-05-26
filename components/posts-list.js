@@ -11,7 +11,6 @@ export default function PostsLists({ allPostsData }) {
     const imagePath = `${image}`
     const imageAlt = `${title} - thumbnail`
     
-    // TODO: Pull this out into a PostCard component
     return (
       <Col key={index}>
         <Link href={`/posts/${id}`}>
