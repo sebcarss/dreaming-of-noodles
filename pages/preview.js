@@ -22,12 +22,8 @@ export default function Home({ allPostsData, title, preview }) {
   return (
     <Layout title={title} preview={preview}>
       <Container className="mt-3">
-        <Row>
-          <h1 className="text-center">{title}</h1>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col xs={12} md={10} lg={8}>
+        <Row className="mt-5">
+          <Col>
             <Image
               src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/tomato-ramen-strawberry-custard-unsplash.jpg"
               alt="dreaming of noodles splash image"
@@ -36,27 +32,27 @@ export default function Home({ allPostsData, title, preview }) {
               layout="responsive"
             />
           </Col>
-          <Col></Col>
-        </Row>
-        <Row className="mt-3">
-          <Col></Col>
-          <Col xs={12} md={10} lg={8}>
+          <Col lg={6} className="mt-3">
+            <Row>
+              <h1 className="text-left">{title}</h1>
+              <hr />
+            </Row>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Welcome to Dreaming of Noodles, my personal blog dedicated to my
+              love of Asian food, heavily influenced by the wonderful cuisine of
+              Japan, and in particular, their delicious (oishī) ramen.
+            </p>
+            <p>
+              This blog will see me virtually touring the world through food,
+              starting with Japan, where I will be exploring the regional dishes
+              from the northenmost prefecture, Hokkaido, and working my way down
+              to the southernmost prefecture, Okinawa.
             </p>
           </Col>
-          <Col></Col>
         </Row>
         <Row>
+          <h2 className="text-center mt-3">Latest Recipes</h2>
+          <hr />
           <PostsList allPostsData={allPostsData} />
         </Row>
       </Container>

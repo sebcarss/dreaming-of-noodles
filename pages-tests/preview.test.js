@@ -36,9 +36,8 @@ describe("Home component", () => {
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Dreaming of Noodles');
   });
 
-//   it('should render the latest recipes posts section', () => {
-//     render(<Home allPostsData={allPostsData} title={title} />);
-//     expect(screen.getByRole('heading', { level: 2 }).textContent).toBe('Latest Recipes');
-
-//   });
+  it('should render the latest recipes posts section', () => {
+    render(<Home allPostsData={allPostsData} title={title} />);
+    expect(screen.getByRole('heading', { level: 2 }).textContent).toBe('Latest Recipes');
+  });
 });
