@@ -4,3 +4,9 @@
 
 [[plugins]]
     package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+  [plugins.inputs]
+  cloudName = "dreaming-of-noodles"
