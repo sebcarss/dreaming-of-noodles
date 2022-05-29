@@ -48,6 +48,9 @@ export default function Home({ allPostsData, title, preview }) {
               from the northenmost prefecture, Hokkaido, and working my way down
               to the southernmost prefecture, Okinawa.
             </p>
+            <p>
+              So come and join me on my culinary adventure!
+            </p>
           </Col>
         </Row>
         <Row>
