@@ -4,8 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 export default function ZonePageDescription({ children, title, image, alt }) {
-    const imagePath = `${process.env.IMAGE_PATH}${image}`;
-    console.log(imagePath);
+  const imagePath = `${process.env.IMAGE_PATH}${image}`;
 
   return (
     <section>
@@ -24,9 +23,7 @@ export default function ZonePageDescription({ children, title, image, alt }) {
             <h1 className="text-left">{title}</h1>
             <hr />
           </Row>
-          <Row>
-            { children }
-          </Row>
+          <Row>{children}</Row>
         </Col>
       </Row>
     </section>

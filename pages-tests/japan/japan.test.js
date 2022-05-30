@@ -2,6 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import Japan from "../../pages/japan";
 
+const originalEnv = process.env;
+
 const allPostsData = [
   {
     title: "Hello World 2",
@@ -24,6 +26,18 @@ const allPostsData = [
 ];
 
 describe("Japan component", () => {
+  beforeEach(() => {
+    jest.resetModules();
+    process.env = {
+      ...originalEnv,
+      IMAGE_PATH: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/',
+    };
+  });
+  
+  afterEach(() => {
+    process.env = originalEnv;
+  });
+  
   it("should render the navbar", () => {
     render(<Japan posts={allPostsData} />);
     expect(screen.getByRole("navigation")).not.toBeNull();
