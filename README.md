@@ -80,3 +80,16 @@ published: true
 You will need to add an image to the S3 bucket `dreamingofnoodles.s3.eu-west-1.amazonaws.com` with the `/images/` prefix. __Remember to make the image public.__
 
 The recipe shoud be written up in the markdown format, which will convert to HTML and be displayed on the site.
+
+## Adding a Region
+
+To add a new region to a country create a new markdown file in the `/regions/` directory with the following structure (example):
+    
+```markdown
+---
+country: Japan
+region: Hokkaido
+gridLinkUrl: "/japan/hokkaido"
+gridLinkImage: "/japan-hokkaido.jpg"
+---
+```

@@ -1,14 +1,13 @@
 import Layout from "../../components/layout";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Link from "next/link";
 import Col from "react-bootstrap/Col";
-import Image from "next/image";
 import { getSortedPostsFrontMatter } from "../../lib/posts";
 import { kebabCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
 import ZonePageDescription from "../../components/zonepagedescription";
 import ImageLinkGrid from "../../components/image-link-grid";
+import { getCountryRegionData } from "../../lib/regions";
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
@@ -19,6 +18,9 @@ export async function getStaticProps() {
     const kebabedTags = post.tags.map((tag) => kebabCase(tag));
     return kebabedTags.includes("japan");
   });
+
+  // Get the country and region data
+  const countryRegionData = await getCountryRegionData("japan");
 
   const japanPrefectureLinkData = [
     {
@@ -50,7 +52,7 @@ export async function getStaticProps() {
   return {
     props: {
       posts: japanFilteredPosts,
-      regionLinkData: japanPrefectureLinkData,
+      regionLinkData: countryRegionData,
     },
   };
 }
