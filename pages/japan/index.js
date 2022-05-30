@@ -1,13 +1,13 @@
 import Layout from "../../components/layout";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Link from "next/link";
 import Col from "react-bootstrap/Col";
-import Image from "next/image";
 import { getSortedPostsFrontMatter } from "../../lib/posts";
 import { kebabCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
 import ZonePageDescription from "../../components/zonepagedescription";
+import ImageLinkGrid from "../../components/image-link-grid";
+import { getCountryRegionData } from "../../lib/regions";
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
@@ -19,14 +19,45 @@ export async function getStaticProps() {
     return kebabedTags.includes("japan");
   });
 
+  // Get the country and region data
+  const countryRegionData = await getCountryRegionData("japan");
+
+  const japanPrefectureLinkData = [
+    {
+      country: "Japan",
+      region: "Hokkaido",
+      gridLinkImage: "japan-hokkaido.jpg",
+      gridLinkUrl: "/japan/hokkaido",
+    },
+    {
+      country: "Japan",
+      region: "Aomori",
+      gridLinkImage: "japan-aomori.jpg",
+      gridLinkUrl: "/japan/aomori",
+    },
+    {
+      country: "Japan",
+      region: "Iwate",
+      gridLinkImage: "japan-iwate.jpg",
+      gridLinkUrl: "/japan/iwate",
+    },
+    {
+      country: "Japan",
+      region: "Miyagi",
+      gridLinkImage: "japan-miyagi.jpg",
+      gridLinkUrl: "/japan/miyagi",
+    }
+  ];
+
   return {
     props: {
       posts: japanFilteredPosts,
+      regionLinkData: countryRegionData,
     },
   };
 }
 
-export default function Japan({ posts }) {
+export default function Japan({ posts, regionLinkData }) {
   const title = "Japan | World Food Tour";
 
   return (
@@ -55,26 +86,9 @@ export default function Japan({ posts }) {
             <h2>Japanese Prefectures</h2>
           </Col>
         </Row>
-        <Link href="/japan/hokkaido">
-          <a>
-            <Row>
-              <Col>
-                <h3>Hokkaido</h3>
-                {/* Insert pic here */}
-              </Col>
-            </Row>
-          </a>
-        </Link>
-        <Link href="/japan/aomori">
-          <a>
-            <Row>
-              <Col>
-                <h3>Aomori</h3>
-                {/* Insert pic here */}
-              </Col>
-            </Row>
-          </a>
-        </Link>
+        <Row>
+          <ImageLinkGrid linkData={regionLinkData}/>
+        </Row>
         <Row className="mt-3">
           <Col>
             <h2>Japanese Recipes</h2>
