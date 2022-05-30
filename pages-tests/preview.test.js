@@ -25,7 +25,21 @@ const allPostsData = [
   },
 ];
 
+const originalEnv = process.env;
+
 describe("Home component", () => {
+  beforeEach(() => {
+    jest.resetModules();
+    process.env = {
+      ...originalEnv,
+      IMAGE_PATH: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/',
+    };
+  });
+  
+  afterEach(() => {
+    process.env = originalEnv;
+  });
+  
   it("should render the navbar", () => {
     render(<Home allPostsData={allPostsData} title={title} />);
     expect(screen.getByRole("navigation")).not.toBeNull();
