@@ -20,14 +20,42 @@ export async function getStaticProps() {
     return kebabedTags.includes("japan");
   });
 
+  const japanPrefectureLinkData = [
+    {
+      country: "Japan",
+      region: "Hokkaido",
+      gridLinkImage: "japan-hokkaido.jpg",
+      gridLinkUrl: "/japan/hokkaido",
+    },
+    {
+      country: "Japan",
+      region: "Aomori",
+      gridLinkImage: "japan-aomori.jpg",
+      gridLinkUrl: "/japan/aomori",
+    },
+    {
+      country: "Japan",
+      region: "Iwate",
+      gridLinkImage: "japan-iwate.jpg",
+      gridLinkUrl: "/japan/iwate",
+    },
+    {
+      country: "Japan",
+      region: "Miyagi",
+      gridLinkImage: "japan-miyagi.jpg",
+      gridLinkUrl: "/japan/miyagi",
+    }
+  ];
+
   return {
     props: {
       posts: japanFilteredPosts,
+      regionLinkData: japanPrefectureLinkData,
     },
   };
 }
 
-export default function Japan({ posts }) {
+export default function Japan({ posts, regionLinkData }) {
   const title = "Japan | World Food Tour";
 
   return (
@@ -57,7 +85,7 @@ export default function Japan({ posts }) {
           </Col>
         </Row>
         <Row>
-          <ImageLinkGrid />
+          <ImageLinkGrid linkData={regionLinkData}/>
         </Row>
         <Row className="mt-3">
           <Col>
