@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Home from "../pages/preview";
+import Japan from "../../pages/japan";
 
-// TODO: Move these to __mocks__
-const title = "Dreaming of Noodles";
+const originalEnv = process.env;
+
 const allPostsData = [
   {
     title: "Hello World 2",
@@ -25,9 +25,7 @@ const allPostsData = [
   },
 ];
 
-const originalEnv = process.env;
-
-describe("Home component", () => {
+describe("Japan component", () => {
   beforeEach(() => {
     jest.resetModules();
     process.env = {
@@ -41,17 +39,22 @@ describe("Home component", () => {
   });
   
   it("should render the navbar", () => {
-    render(<Home allPostsData={allPostsData} title={title} />);
+    render(<Japan posts={allPostsData} />);
     expect(screen.getByRole("navigation")).not.toBeNull();
   });
 
-  it('should render an about the blog section', () => {
-    render(<Home allPostsData={allPostsData} title={title} />);
-    expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Dreaming of Noodles');
+  it("should render the title", () => {
+    render(<Japan posts={allPostsData} />);
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Japan");
   });
 
-  it('should render the latest recipes posts section', () => {
-    render(<Home allPostsData={allPostsData} title={title} />);
-    expect(screen.getByRole('heading', { level: 2 }).textContent).toBe('Latest Recipes');
+  it('should render a prefecture section', () => {
+    render(<Japan posts={allPostsData} />);
+    expect(screen.getAllByRole('heading', { level: 2 })[0].textContent).toBe('Japanese Prefectures');
+  });
+
+  it("should render the Japanese recipes section", () => {
+    render(<Japan posts={allPostsData} />);
+    expect(screen.getAllByRole("heading", { level: 2 })[1].textContent).toBe("Japanese Recipes");
   });
 });
