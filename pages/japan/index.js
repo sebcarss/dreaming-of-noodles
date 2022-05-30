@@ -8,6 +8,7 @@ import { getSortedPostsFrontMatter } from "../../lib/posts";
 import { kebabCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
 import ZonePageDescription from "../../components/zonepagedescription";
+import ImageLinkGrid from "../../components/image-link-grid";
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
@@ -55,26 +56,9 @@ export default function Japan({ posts }) {
             <h2>Japanese Prefectures</h2>
           </Col>
         </Row>
-        <Link href="/japan/hokkaido">
-          <a>
-            <Row>
-              <Col>
-                <h3>Hokkaido</h3>
-                {/* Insert pic here */}
-              </Col>
-            </Row>
-          </a>
-        </Link>
-        <Link href="/japan/aomori">
-          <a>
-            <Row>
-              <Col>
-                <h3>Aomori</h3>
-                {/* Insert pic here */}
-              </Col>
-            </Row>
-          </a>
-        </Link>
+        <Row>
+          <ImageLinkGrid />
+        </Row>
         <Row className="mt-3">
           <Col>
             <h2>Japanese Recipes</h2>
