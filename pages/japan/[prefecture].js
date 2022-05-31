@@ -29,9 +29,10 @@ export async function getStaticProps({ params }) {
 
 export default function JapanPrefecture({ prefecture }) {
     const prefectureDisplayName = titleCase(prefecture);
+    const title = `${prefectureDisplayName} | Japan | Dreaming of Noodles`;
 
   return (
-    <Layout>
+    <Layout title={title}>
         <h1 className="mt-3">{prefectureDisplayName}</h1>
     </Layout>
   );
