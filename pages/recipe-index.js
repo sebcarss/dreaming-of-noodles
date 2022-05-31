@@ -16,7 +16,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Tags({ tagLinkData }) {
-    const title = "Recipe Index"
+    const title = "Recipe Index | Dreaming of Noodles";
 
     const tagLinks = tagLinkData.map((tagData, index) => {
         const path = "/tags/" + tagData.slug;

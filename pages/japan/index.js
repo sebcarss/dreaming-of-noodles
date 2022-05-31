@@ -46,7 +46,7 @@ export async function getStaticProps() {
       region: "Miyagi",
       gridLinkImage: "japan-miyagi.jpg",
       gridLinkUrl: "/japan/miyagi",
-    }
+    },
   ];
 
   return {
@@ -58,7 +58,7 @@ export async function getStaticProps() {
 }
 
 export default function Japan({ posts, regionLinkData }) {
-  const title = "Japan | World Food Tour";
+  const title = "Japan | Dreaming of Noodles";
 
   return (
     <Layout title={title}>
@@ -81,17 +81,16 @@ export default function Japan({ posts, regionLinkData }) {
             dishes that are found there.
           </p>
         </ZonePageDescription>
-        <Row className="mt-3">
-          <Col>
-            <h2>Japanese Prefectures</h2>
-          </Col>
-        </Row>
         <Row>
-          <ImageLinkGrid linkData={regionLinkData}/>
+          <ImageLinkGrid
+            linkData={regionLinkData}
+            heading="Japanese Prefectures"
+          />
         </Row>
         <Row className="mt-3">
           <Col>
-            <h2>Japanese Recipes</h2>
+            <h2 style={{ textAlign: "center" }}>Japanese Recipes</h2>
+            <hr />
           </Col>
         </Row>
         <PostsList allPostsData={posts} />

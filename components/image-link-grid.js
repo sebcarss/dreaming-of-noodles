@@ -11,29 +11,34 @@ const cardStyle = {
   boxShadow: "0 5px 10px rgba(0,0,0,.2)",
 };
 
-export default function ImageLinkGrid({ linkData }) {
-  const links = linkData.map(
-    ({ region, gridLinkUrl }, index) => {
-
-      return (
-        <Col key={index}>
-          <Link href={gridLinkUrl}>
-            <a>
+export default function ImageLinkGrid({ linkData , heading }) {
+  const links = linkData.map(({ region, gridLinkUrl }, index) => {
+    return (
+      <Col key={index}>
+        <Link href={gridLinkUrl}>
+          <a>
             <Card bg="light" text="black" style={cardStyle}>
-                <Card.Body>
-                  <Card.Title>{region}</Card.Title>
-                </Card.Body>
-              </Card>
-            </a>
-          </Link>
-        </Col>
-      );
-    }
-  );
+              <Card.Body>
+                <Card.Title>{region}</Card.Title>
+              </Card.Body>
+            </Card>
+          </a>
+        </Link>
+      </Col>
+    );
+  });
 
   return (
-    <Row xs={1} sm={2} md={3} lg={4} className="g-1">
-      {links}
-    </Row>
+    <div>
+      <Row className="mt-3">
+        <Col>
+          <h2 style={{ textAlign: "center"}}>{heading}</h2>
+          <hr />
+        </Col>
+      </Row>
+      <Row xs={1} sm={2} md={3} lg={4} className="g-1 mt-1">
+        {links}
+      </Row>
+    </div>
   );
 }
