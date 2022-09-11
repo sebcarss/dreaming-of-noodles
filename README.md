@@ -4,9 +4,17 @@ This is my personal recipe blog and food diary that allows me to capture my thou
 
 ## Prerequisites
 
-Node version: v17.5.0
+Node version: 17.5.0
+
+NPM version: 8.4.1
 
 ## Getting Started
+
+## Installation
+```bash
+# Install the node_modules before you start your development server
+npm run install
+```
 
 ### Local development 
 
@@ -93,3 +101,7 @@ gridLinkUrl: "/japan/hokkaido"
 gridLinkImage: "/japan-hokkaido.jpg"
 ---
 ```
+
+## Adding Styles to the Markdown
+
+The `global.css` file should be used to update the styles from the Markdown files used for recipes. This is imported in the `_app.js` file so will be utilised across the site. For non-markdown files inline styling of the components can be used.  

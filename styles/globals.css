@@ -23,3 +23,15 @@ a {
   font-weight: 400;
   font-display: swap;
 }
+
+table {
+  width: 100%;
+}
+
+table th {
+  border: 1px solid #ddd;
+}
+
+table td {
+  border: 1px solid #ddd;
+}

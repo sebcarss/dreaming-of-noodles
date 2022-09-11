@@ -1,5 +1,6 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostMatterAndContent } from "../../lib/posts";
+import Image from 'next/image';
 
 /**
  *
@@ -42,11 +43,21 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   return (
     <Layout title={postData.title} >
-      <div className="mt-3">
+    <div className="mt-3">
+      <div >
+        <Image 
+          alt="test" 
+          src={postData.image}
+          width={300} 
+          height={200}
+          layout="responsive" />
+      </div>
+      <div>
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />  
       </div>
+    </div>
     </Layout>
   );
 }
