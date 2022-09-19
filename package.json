@@ -27,6 +27,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
+    "@types/node": "^18.7.18",
     "babel-jest": "^27.0.6",
     "cypress": "^9.6.1",
     "eslint": "^7.30.0",
