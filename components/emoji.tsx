@@ -1,11 +1,20 @@
-const Emoji = props => (
+type EmojiProps = {
+    label?: string;
+    symbol: string;
+};
+
+const Emoji = ({
+    label,
+    symbol
+}: EmojiProps) => (
     <span
+        data-testid="emoji"
         className="emoji"
         role="img"
-        aria-label={props.label ? props.label : ""}
-        aria-hidden={props.label ? "false" : "true"}
+        aria-label={label}
+        aria-hidden={false}
     >
-        {props.symbol}
+        {symbol}
     </span>
 );
 

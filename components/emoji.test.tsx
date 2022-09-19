@@ -3,17 +3,17 @@ import { render, screen } from '@testing-library/react';
 import Emoji from './emoji';
 
 describe('Render Emoji component', () => {
-    it('Emoji renders correctly', () => {
-        render(<Emoji symbol="🍕" label="pizza" />);
+    it('renders emoji symbol', () => {
+        render(<Emoji symbol="🍕" />);
 
-        const emoji = screen.getByRole('img').textContent;
+        const emoji: string = screen.getByRole('img').textContent;
         expect(emoji).toBe("🍕");
     });
 
-    it('Emoji aria label display "pizza"', () => {
+    it('renders aria label when argument passed', () => {
         render(<Emoji symbol="🍕" label="pizza" />);
 
-        const ariaLabel = screen.getByLabelText('pizza');
-        expect(ariaLabel).not.toBeNull();
-    })
+        const emoji: string = screen.getByTestId('emoji').getAttribute('aria-label');
+        expect(emoji).toBe("pizza");
+    });
 })
