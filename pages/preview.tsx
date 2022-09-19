@@ -4,6 +4,7 @@ import PostsList from "../components/posts-list";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ZonePageDescription from "../components/zonepagedescription";
+import Image from "next/image";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsFrontMatter();
@@ -20,11 +21,12 @@ export async function getStaticProps() {
 export default function Home({ allPostsData, title, preview }) {
   return (
     <Layout title={title} preview={preview}>
+      <div className="d-flex justify-content-center">
+        <Image alt="dreaming of nooodles logo" src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png" width="600" height="600"/>
+      </div>
       <Container className="mt-3">
         <ZonePageDescription
           title={title}
-          image="tomato-ramen-strawberry-custard-unsplash.jpg"
-          alt="dreaming of noodles splash image"
         >
           <p>
             Welcome to Dreaming of Noodles, my personal blog dedicated to my

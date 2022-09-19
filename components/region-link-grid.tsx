@@ -3,21 +3,28 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Link from "next/link";
+import { LinkCardData } from "./LinkCardData";
 
-const cardStyle = {
+const cardStyle: object = {
   borderRadius: "2em",
   textAlign: "center",
   width: "auto",
   boxShadow: "0 5px 10px rgba(0,0,0,.2)",
+  color: 'black'
 };
 
-export default function ImageLinkGrid({ linkData , heading }) {
+type ImageLinkGridProps = {
+  linkData: LinkCardData[];
+  heading: string;
+};
+
+export default function RegionLinkGrid({ linkData, heading }: ImageLinkGridProps) {
   const links = linkData.map(({ region, gridLinkUrl }, index) => {
     return (
       <Col key={index}>
         <Link href={gridLinkUrl}>
           <a>
-            <Card bg="light" text="black" style={cardStyle}>
+            <Card bg="light" style={cardStyle}>
               <Card.Body>
                 <Card.Title>{region}</Card.Title>
               </Card.Body>

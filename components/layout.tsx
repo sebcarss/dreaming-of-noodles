@@ -4,13 +4,18 @@ import Navigation from "./navigation";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
+interface LayoutProps {
+  children: React.ReactNode;
+  title: string;
+  preview?: boolean;
+}
+
 /**
  *
  * @param {JSXObject} children Default children JSX to be rendered
- * @param {boolean} home Set to true on the homepage
  * @returns The main layout for all pages
  */
-export default function Layout({ children, title, preview }) {
+export default function Layout({ children, title, preview }: LayoutProps) {
   return (
     <Container>
       <Head>

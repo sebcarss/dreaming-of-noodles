@@ -6,7 +6,7 @@ import { getSortedPostsFrontMatter } from "../../lib/posts";
 import { kebabCase } from "../../lib/string-utils";
 import PostsList from "../../components/posts-list";
 import ZonePageDescription from "../../components/zonepagedescription";
-import ImageLinkGrid from "../../components/image-link-grid";
+import RegionLinkGrid from "../../components/region-link-grid";
 import { getCountryRegionData } from "../../lib/regions";
 
 export async function getStaticProps() {
@@ -21,33 +21,6 @@ export async function getStaticProps() {
 
   // Get the country and region data
   const countryRegionData = await getCountryRegionData("japan");
-
-  const japanPrefectureLinkData = [
-    {
-      country: "Japan",
-      region: "Hokkaido",
-      gridLinkImage: "japan-hokkaido.jpg",
-      gridLinkUrl: "/japan/hokkaido",
-    },
-    {
-      country: "Japan",
-      region: "Aomori",
-      gridLinkImage: "japan-aomori.jpg",
-      gridLinkUrl: "/japan/aomori",
-    },
-    {
-      country: "Japan",
-      region: "Iwate",
-      gridLinkImage: "japan-iwate.jpg",
-      gridLinkUrl: "/japan/iwate",
-    },
-    {
-      country: "Japan",
-      region: "Miyagi",
-      gridLinkImage: "japan-miyagi.jpg",
-      gridLinkUrl: "/japan/miyagi",
-    },
-  ];
 
   return {
     props: {
@@ -65,8 +38,6 @@ export default function Japan({ posts, regionLinkData }) {
       <Container className="mt-3">
         <ZonePageDescription
           title="Japan"
-          image="japanese-prefectures.webp"
-          alt="Map of Japanese prefectures"
         >
           <p>
             This is the starting point on my virtual culinary world tour, and
@@ -82,7 +53,7 @@ export default function Japan({ posts, regionLinkData }) {
           </p>
         </ZonePageDescription>
         <Row>
-          <ImageLinkGrid
+          <RegionLinkGrid
             linkData={regionLinkData}
             heading="Japanese Prefectures"
           />
