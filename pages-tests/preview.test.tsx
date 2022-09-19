@@ -41,17 +41,17 @@ describe("Home component", () => {
   });
   
   it("should render the navbar", () => {
-    render(<Home allPostsData={allPostsData} title={title} />);
+    render(<Home allPostsData={allPostsData} title={title} preview />);
     expect(screen.getByRole("navigation")).not.toBeNull();
   });
 
   it('should render an about the blog section', () => {
-    render(<Home allPostsData={allPostsData} title={title} />);
+    render(<Home allPostsData={allPostsData} title={title} preview/>);
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Dreaming of Noodles');
   });
 
   it('should render the latest recipes posts section', () => {
-    render(<Home allPostsData={allPostsData} title={title} />);
+    render(<Home allPostsData={allPostsData} title={title} preview />);
     expect(screen.getByRole('heading', { level: 2 }).textContent).toBe('Latest Recipes');
   });
 });

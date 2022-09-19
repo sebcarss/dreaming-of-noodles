@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row'
 interface LayoutProps {
   children: React.ReactNode;
   title: string;
-  preview: boolean;
+  preview?: boolean;
 }
 
 /**

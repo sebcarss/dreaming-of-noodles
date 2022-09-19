@@ -4,14 +4,14 @@ import Nav from 'react-bootstrap/Nav'
 export default function Navigation({ preview }) {
   if (preview) {
     return (
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <Navbar className="color-nav" variant="dark" expand="lg" fixed="top">
         <Navbar.Brand href="/" className="mx-2">Dreaming of Noodles</Navbar.Brand>
       </Navbar>
     ); 
   }
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar className="color-nav" variant="dark"expand="lg" fixed="top">
         <Navbar.Brand href="/" className="mx-2">Dreaming of Noodles</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

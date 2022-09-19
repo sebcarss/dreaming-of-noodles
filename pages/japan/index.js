@@ -38,8 +38,6 @@ export default function Japan({ posts, regionLinkData }) {
       <Container className="mt-3">
         <ZonePageDescription
           title="Japan"
-          image="japanese-prefectures.webp"
-          alt="Map of Japanese prefectures"
         >
           <p>
             This is the starting point on my virtual culinary world tour, and
