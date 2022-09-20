@@ -22,7 +22,12 @@ export default function Home({ allPostsData, title, preview }) {
   return (
     <Layout title={title} preview={preview}>
       <div className="d-flex justify-content-center">
-        <Image alt="dreaming of nooodles logo" src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png" width="600" height="600"/>
+        <Image 
+          alt="dreaming of nooodles logo" 
+          src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png" 
+          width={320} 
+          height={320}
+          layout="fixed"/>
       </div>
       <Container className="mt-3">
         <ZonePageDescription

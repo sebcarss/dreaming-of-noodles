@@ -31,9 +31,9 @@ export default function Home({ title, preview }: HomeProps) {
         <Image 
           alt="dreaming of nooodles logo" 
           src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png" 
-          width="320" 
-          height="320"
-          layout="intrinsic" />
+          width={320} 
+          height={320}
+          layout="fixed" />
       </div>
       <Container className="mt-3">
         <div  className="lead text-center mb-3 mt-5">
