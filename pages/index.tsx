@@ -28,7 +28,12 @@ export default function Home({ title, preview }: HomeProps) {
   return (
     <Layout title={title} preview={preview} >
       <div className="d-flex justify-content-center">
-        <Image alt="dreaming of nooodles logo" src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png" width="600" height="600"/>
+        <Image 
+          alt="dreaming of nooodles logo" 
+          src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png" 
+          width="320" 
+          height="320"
+          layout="intrinsic" />
       </div>
       <Container className="mt-3">
         <div  className="lead text-center mb-3 mt-5">
