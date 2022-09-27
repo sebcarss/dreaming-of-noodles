@@ -4,6 +4,33 @@ import Japan from "../../pages/japan";
 
 const originalEnv = process.env;
 
+const linkData = [
+  {
+    country: "Japan",
+    region: "Hokkaido",
+    gridLinkImage: "japan-hokkaido.jpg",
+    gridLinkUrl: "/japan/hokkaido",
+  },
+  {
+    country: "Japan",
+    region: "Aomori",
+    gridLinkImage: "japan-aomori.jpg",
+    gridLinkUrl: "/japan/aomori",
+  },
+  {
+    country: "Japan",
+    region: "Iwate",
+    gridLinkImage: "japan-iwate.jpg",
+    gridLinkUrl: "/japan/iwate",
+  },
+  {
+    country: "Japan",
+    region: "Miyagi",
+    gridLinkImage: "japan-miyagi.jpg",
+    gridLinkUrl: "/japan/miyagi",
+  },
+];
+
 const allPostsData = [
   {
     title: "Hello World 2",
@@ -39,22 +66,22 @@ describe("Japan component", () => {
   });
   
   it("should render the navbar", () => {
-    render(<Japan posts={allPostsData} />);
+    render(<Japan posts={allPostsData} regionLinkData={linkData} />);
     expect(screen.getByRole("navigation")).not.toBeNull();
   });
 
   it("should render the title", () => {
-    render(<Japan posts={allPostsData} />);
+    render(<Japan posts={allPostsData} regionLinkData={linkData} />);
     expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Japan");
   });
 
   it('should render a prefecture section', () => {
-    render(<Japan posts={allPostsData} />);
+    render(<Japan posts={allPostsData} regionLinkData={linkData} />);
     expect(screen.getAllByRole('heading', { level: 2 })[0].textContent).toBe('Japanese Prefectures');
   });
 
   it("should render the Japanese recipes section", () => {
-    render(<Japan posts={allPostsData} />);
+    render(<Japan posts={allPostsData} regionLinkData={linkData} />);
     expect(screen.getAllByRole("heading", { level: 2 })[1].textContent).toBe("Japanese Recipes");
   });
 });

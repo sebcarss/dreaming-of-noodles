@@ -1,7 +1,11 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
-export default function Navigation({ preview }) {
+type NavigationProps = {
+  preview?: boolean;
+}
+
+export default function Navigation({ preview }: NavigationProps) {
   if (preview) {
     return (
       <Navbar className="color-nav" variant="dark" expand="lg" fixed="top">

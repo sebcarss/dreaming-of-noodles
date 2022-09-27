@@ -5,6 +5,6 @@ import Home from "../pages/index";
 describe("render homepage", () => {
     it("renders brand logo on preview page", () => {
         render(<Home title="test" preview={false} />)
-        expect(screen.getByRole('image'))
+        expect(screen.getByRole('img'))
     });
 });
