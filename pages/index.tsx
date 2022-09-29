@@ -1,14 +1,12 @@
 import Layout from "../components/layout";
 import { getSortedPostsFrontMatter } from "../lib/posts";
 import Container from 'react-bootstrap/Container'
-import Emoji from "../components/emoji";
 import Image from 'next/image';
-import Logo from '../public/images/dreaming-of-noodles.png';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsFrontMatter();
   const title = "Dreaming of Noodles";
-  const preview = true
+  const preview = false
 
   return {
     props: {

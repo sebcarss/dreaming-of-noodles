@@ -5,20 +5,30 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ZonePageDescription from "../components/zonepagedescription";
 import Image from "next/image";
+import { PostData } from '../components/PostData';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsFrontMatter();
   const title = "Dreaming of Noodles";
+  const preview = true;
 
   return {
     props: {
       allPostsData,
       title,
+      preview
     },
   };
 }
 
-export default function Home({ allPostsData, title, preview }) {
+type PreviewProps = {
+  allPostsData: PostData[];
+  title: string;
+  preview?: boolean;
+};
+
+
+export default function Home({ allPostsData, title, preview }: PreviewProps) {
   return (
     <Layout title={title} preview={preview}>
       <div className="d-flex justify-content-center">

@@ -3,10 +3,15 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'next/image'
+import { PostData } from './PostData';
 
 const cardStyle = { width: 'auto', borderRadius: 0}
 
-export default function PostsLists({ allPostsData }) {
+type PostsListsProps = {
+  allPostsData: PostData[];
+}
+
+export default function PostsLists({ allPostsData }: PostsListsProps) {
   const posts = allPostsData.map(({ id, excerpt, title, image }, index) => {
     const imagePath = `${image}`
     const imageAlt = `${title} - thumbnail`

@@ -2,11 +2,11 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 type NavigationProps = {
-  preview?: boolean;
+  preview: boolean;
 }
 
 export default function Navigation({ preview }: NavigationProps) {
-  if (preview) {
+  if (!preview) {
     return (
       <Navbar className="color-nav" variant="dark" expand="lg" fixed="top">
         <Navbar.Brand href="/" className="mx-2">Dreaming of Noodles</Navbar.Brand>
