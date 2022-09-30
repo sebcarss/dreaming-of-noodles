@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   return (
-    <Layout title={postData.title} >
+    <Layout title={postData.title} preview={true}>
     <div className="mt-3">
       <div >
         <Image 

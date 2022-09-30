@@ -31,7 +31,7 @@ export default function Tags({ tagLinkData }) {
       });
 
     return (
-        <Layout title={title}>
+        <Layout title={title} preview={true}>
             <Container className="mt-3">
                 <Row className="mb-3">
                     <h1>Recipe Index</h1>
