@@ -32,7 +32,7 @@ export default function JapanPrefecture({ prefecture }) {
     const title = `${prefectureDisplayName} | Japan | Dreaming of Noodles`;
 
   return (
-    <Layout title={title} preview={true}>
+    <Layout title={title}>
         <h1 className="mt-3">{prefectureDisplayName}</h1>
     </Layout>
   );
