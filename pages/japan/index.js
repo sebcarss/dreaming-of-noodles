@@ -34,7 +34,7 @@ export default function Japan({ posts, regionLinkData }) {
   const title = "Japan | Dreaming of Noodles";
 
   return (
-    <Layout title={title}>
+    <Layout title={title} preview={true}>
       <Container className="mt-3">
         <ZonePageDescription
           title="Japan"

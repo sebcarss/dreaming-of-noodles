@@ -71,7 +71,7 @@ export default function Tag({ posts, tag }) {
   const title = `${tag} Recipes`
 
   return (
-    <Layout title={title} >
+    <Layout title={title} preview={true}>
       <h1 className="mt-3">{title}</h1>
       <PostsList allPostsData={posts} />
     </Layout>
