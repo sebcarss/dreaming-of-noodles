@@ -3,21 +3,19 @@
 This is my personal recipe blog and food diary that allows me to capture my thoughts on my journey into the wonderful world of food discovery. 
 
 ## Prerequisites
-
-Node version: 17.5.0
-
-NPM version: 8.4.1
-
-## Getting Started
-
-## Installation
+---
 ```bash
 # Install the node_modules before you start your development server
 npm run install
 ```
+Please ensure you are using the following versions of these libraries:
 
-### Local development 
+- Node version: 17.5.0
+- NPM version: 8.4.1
+- TypeScript version: 4.8.3
 
+## Local development 
+---
 ```bash
 # Run the development server and go to http://localhost:3000/
 npm run dev
@@ -29,26 +27,33 @@ npm run lint
 npm run test
 ```
 
-### Testing
-
+## Testing
+---
 ### Unit testing
-Unit testing is done with [Jest](https://facebook.github.io/jest/).
+> Unit testing is done with [Jest](https://facebook.github.io/jest/).
+>
+>Add your unit tests to the same location as the code which lives in the `/lib/`dir but name the test file with the same name as the file but with the `.test.js` extension.
 
-Add your unit tests to the same location as the code which lives in the `/lib/`dir but name the test file with the same name as the file but with the `.test.js` extension.
+### Component testing
 
-#### Component testing
+>Component testing is done with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
+>
+>Add your unit tests to the same location as the component which lives in the `/component/` dir but name the test file with the same name as the file but with the `.test.js` extension.
+>
 
-Component testing is done with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
+### Snapshot testing
+>Snapshot testing is done with [Jest](https://facebook.github.io/jest/).
+>
+>The snapshots should be taken for the pages that are created in the `/pages/` dir but the tests should live in the `/pages-tests/` dir with a `.test.tsx` extension. The snapshots will be saved to `/pages-tests/__snapshots__`. When you run `npm run test` Jest will test the current snapshot against the previous one and fail if there are any changes. If the snapshot doesn't exist it will create one. If the snapshot fails and it is an expected change then you can hit `'u'` and Jest will update the snapshot. 
+### End-To-End Testing
 
-Add your unit tests to the same location as the component which lives in the `/component/` dir but name the test file with the same name as the file but with the `.test.js` extension.
-
-End-to-end testing is done with [Cypress](https://docs.cypress.io/guides/getting-started/introduction.html).
-
-Cypress tests live in the `/cypress/integration/` dir. Name the test file with the same name as the page but with the `.spec.js` extension.
+>End-to-end testing is done with [Cypress](https://docs.cypress.io/guides/getting-started/introduction.html).
+>
+>Cypress tests live in the `/cypress/integration/` dir. Name the test file with the same name as the page but with the `.spec.js` extension.
 
 
-### Preparing a production build
-
+## Preparing a production build
+---
 Open a terminal
 
 ```bash

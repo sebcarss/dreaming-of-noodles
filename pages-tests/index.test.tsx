@@ -1,10 +1,10 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
+import renderer from 'react-test-renderer';
 import Home from "../pages/index";
 
-describe("render temporary homepage", () => {
-    it('renders the navbar', () => {
-        render(<Home title="test" preview={false} />);
-        console.log(screen.getAllByRole('link'));
+
+describe("render homepage", () => {
+    it("matches the snapshot for the non-preview homepage", () => {
+        const tree = renderer.create(<Home title="Test title" preview={false} />).toJSON();
+        expect(tree).toMatchSnapshot();
     });
 });

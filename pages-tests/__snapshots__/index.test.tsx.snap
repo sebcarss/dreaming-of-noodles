@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render homepage matches the snapshot for the non-preview homepage 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <nav
+      className="color-nav navbar navbar-expand-lg navbar-dark fixed-top"
+    >
+      <a
+        className="mx-2 navbar-brand"
+        href="/"
+      >
+        Dreaming of Noodles
+      </a>
+    </nav>
+    <main
+      className="mt-5"
+    >
+      <div
+        className="d-flex justify-content-center"
+      >
+        <span
+          style={
+            {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": 320,
+              "margin": 0,
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": 320,
+            }
+          }
+        >
+          <img
+            alt="dreaming of noodles logo"
+            data-nimg="fixed"
+            decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="dreaming of noodles logo"
+              data-nimg="fixed"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fdreamingofnoodles.s3.eu-west-1.amazonaws.com%2Fimages%2Fdreaming-of-noodles.png&w=640&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fdreamingofnoodles.s3.eu-west-1.amazonaws.com%2Fimages%2Fdreaming-of-noodles.png&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fdreamingofnoodles.s3.eu-west-1.amazonaws.com%2Fimages%2Fdreaming-of-noodles.png&w=640&q=75 2x"
+              style={
+                {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </span>
+      </div>
+      <div
+        className="mt-3 container"
+      >
+        <div
+          className="lead text-center mb-3 mt-5"
+        >
+          I'm currently slurping on some noodles and as soon as I'm done I'll get back to making this website.
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer
+    className="mb-3"
+  >
+    <hr />
+    <div
+      className="lead text-center"
+    >
+      Recipes by Seb Carss
+    </div>
+  </footer>
+</div>
+`;

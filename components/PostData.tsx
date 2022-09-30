@@ -1,7 +1,7 @@
 export interface PostData {
     title: string;
     id: string;
-    date: Date;
+    date: string;
     tags: string[];
     published: boolean;
     excerpt: string;

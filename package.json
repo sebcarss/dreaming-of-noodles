@@ -33,6 +33,7 @@
     "cypress": "^9.6.1",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
-    "jest-environment-jsdom": "^29.0.3"
+    "jest-environment-jsdom": "^29.0.3",
+    "react-test-renderer": "^18.2.0"
   }
 }

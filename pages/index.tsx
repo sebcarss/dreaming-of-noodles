@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 type HomeProps = {
   title: string;
-  preview?: boolean;
+  preview: boolean;
 };
 
 export default function Home({ title, preview }: HomeProps) {

@@ -24,7 +24,7 @@ export async function getStaticProps() {
 type PreviewProps = {
   allPostsData: PostData[];
   title: string;
-  preview?: boolean;
+  preview: boolean;
 };
 
 

@@ -1,10 +1,10 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
 import Home from "../pages/preview";
+import { PostData } from '../components/PostData';
+import renderer from 'react-test-renderer';
 
 // TODO: Move these to __mocks__
 const title = "Dreaming of Noodles";
-const allPostsData = [
+const allPostsData: PostData[] = [
   {
     title: "Hello World 2",
     id: "2019-01-02-hello-world-2",
@@ -25,33 +25,9 @@ const allPostsData = [
   },
 ];
 
-const originalEnv = process.env;
-
 describe("Home component", () => {
-  beforeEach(() => {
-    jest.resetModules();
-    process.env = {
-      ...originalEnv,
-      IMAGE_PATH: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/',
-    };
-  });
-  
-  afterEach(() => {
-    process.env = originalEnv;
-  });
-  
-  it("should render the navbar", () => {
-    render(<Home allPostsData={allPostsData} title={title} preview />);
-    expect(screen.getByRole("navigation")).not.toBeNull();
-  });
-
-  it('should render an about the blog section', () => {
-    render(<Home allPostsData={allPostsData} title={title} preview/>);
-    expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Dreaming of Noodles');
-  });
-
-  it('should render the latest recipes posts section', () => {
-    render(<Home allPostsData={allPostsData} title={title} preview />);
-    expect(screen.getByRole('heading', { level: 2 }).textContent).toBe('Latest Recipes');
+  it("should match the snapshot", () => {
+    const tree = renderer.create(<Home allPostsData={allPostsData} title="Test Title" preview={true} />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
