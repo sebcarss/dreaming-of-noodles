@@ -8,19 +8,21 @@ import PostsList from "../../components/posts-list";
 import ZonePageDescription from "../../components/zonepagedescription";
 import RegionLinkGrid from "../../components/region-link-grid";
 import { getCountryRegionData } from "../../lib/regions";
+import { PostData } from '../../components/PostData';
+import { LinkCardData } from '../../components/LinkCardData';
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
   const allPosts = await getSortedPostsFrontMatter();
 
-  // Filter the posts for just the ones that have the japan as a tag
+  // Filter the posts for just the ones that have japan as a tag
   const japanFilteredPosts = allPosts.filter((post) => {
     const kebabedTags = post.tags.map((tag) => kebabCase(tag));
     return kebabedTags.includes("japan");
   });
 
   // Get the country and region data
-  const countryRegionData = await getCountryRegionData("japan");
+  const countryRegionData: { [key: string]: LinkCardData }[] = await getCountryRegionData("japan");
 
   return {
     props: {
@@ -30,8 +32,13 @@ export async function getStaticProps() {
   };
 }
 
-export default function Japan({ posts, regionLinkData }) {
-  const title = "Japan | Dreaming of Noodles";
+type JapanProps = {
+  posts: PostData[];
+  regionLinkData: LinkCardData[];
+};
+
+export default function Japan({ posts, regionLinkData }: JapanProps) {
+  const title: string = "Japan | Dreaming of Noodles";
 
   return (
     <Layout title={title} preview={true}>

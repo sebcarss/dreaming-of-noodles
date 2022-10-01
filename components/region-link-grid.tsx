@@ -13,12 +13,12 @@ const cardStyle: object = {
   color: 'black'
 };
 
-type ImageLinkGridProps = {
+type RegionLinkGridProps = {
   linkData: LinkCardData[];
   heading: string;
 };
 
-export default function RegionLinkGrid({ linkData, heading }: ImageLinkGridProps) {
+export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProps) {
   const links = linkData.map(({ region, gridLinkUrl }, index) => {
     return (
       <Col key={index}>

@@ -97,7 +97,7 @@ The recipe shoud be written up in the markdown format, which will convert to HTM
 ## Adding a Region
 
 To add a new region to a country create a new markdown file in the `/regions/` directory with the following structure (example):
-    
+
 ```markdown
 ---
 country: Japan
