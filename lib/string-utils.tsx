@@ -4,12 +4,12 @@
  * @param {String} str The string to convert to Title Case
  * @returns The string in Title Case
  */
-export function titleCase(str) {
+export function titleCase(str: string) {
   if (str === null || str === undefined || str === "") {
     return "";
   }
   
-  return str.replace(/-/g, " ").replace(/\w\S*/g, function (txt) {
+  return str.replace(/-/g, " ").replace(/\w\S*/g, function (txt: string) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
@@ -21,7 +21,7 @@ export function titleCase(str) {
  * @param {String} str The string to convert to kebab-case
  * @returns The String in kebab-case
  */
-export function kebabCase(str) {
+export function kebabCase(str: string) {
   if (str === null || str === undefined || str === "") {
     return "";
   };
