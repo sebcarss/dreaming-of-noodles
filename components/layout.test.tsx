@@ -12,7 +12,7 @@ describe('Layout', () => {
     const mockNavigation = Navigation as jest.MockedFunction<typeof Navigation>;
     const mockFooter = Footer as jest.MockedFunction<typeof Footer>;
 
-    it('renders child HTML', () => {
+    it('should render the child HTML', () => {
         render(<Layout title="Test Title" preview>Child HTML</Layout>);
         expect(mockNavigation).toHaveBeenCalledWith({"preview": true}, {});
         expect(screen.getByText("Child HTML")).not.toBeNull();

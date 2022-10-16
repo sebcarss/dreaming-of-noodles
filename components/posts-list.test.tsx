@@ -10,7 +10,7 @@ const posts: PostData[] = [
         title: 'Post 1',
         image: '/post-1-image.jpg',
         excerpt: 'Post 1 excerpt',
-        date: new Date(),
+        date: (new Date()).toString(),
         tags: [""],
         published: true
     },
@@ -19,7 +19,7 @@ const posts: PostData[] = [
         title: 'Post 2',
         image: '/post-2-image.jpg',
         excerpt: 'Post 2 excerpt',
-        date: new Date(),
+        date: (new Date()).toString(),
         tags: [""],
         published: true
     },

@@ -2,7 +2,12 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-export default function ZonePageDescription({ children, title }) {
+type PrefectureProps = {
+  children: React.ReactNode;
+  title: string;
+};
+
+export default function ZonePageDescription({ children, title }: PrefectureProps) {
   return (
     <section>
       <Row>  

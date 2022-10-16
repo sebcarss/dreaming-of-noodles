@@ -4,7 +4,7 @@ import Navigation from "./navigation";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
-interface LayoutProps {
+type LayoutProps = {
   children: React.ReactNode;
   title: string;
   preview?: boolean;
