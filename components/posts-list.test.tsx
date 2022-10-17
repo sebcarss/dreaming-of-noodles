@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import PostsLists from './posts-list';
-import { PostData } from './PostData';
+import { PostData } from '../types/PostData';
 
 // TODO: Put this array into __mocks__ directory
-const posts: PostData[] = [
+const posts = [
     {
         id: '1',
         title: 'Post 1',

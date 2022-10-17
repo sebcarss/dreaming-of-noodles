@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { LinkCardData } from "../components/LinkCardData";
+import { LinkCardData } from "../types/LinkCardData";
 
-const regionsDirectory: string = path.join(process.cwd(), "regions");
+const regionsDirectory = path.join(process.cwd(), "regions");
 
 /**
  * This function is used to analyse all the front matter in the `/regions/` folder and
@@ -21,12 +21,12 @@ const regionsDirectory: string = path.join(process.cwd(), "regions");
  * @returns 
  */
 export function getCountryRegionData(country: string) {
-  const countryDirectory: string = path.join(regionsDirectory, country);
-  const fileNames: string[] = fs.readdirSync(countryDirectory);
-  const regionData: {[key: string]: LinkCardData}[] = fileNames.map((fileName) => {
-    let fullPath: string = path.join(countryDirectory, fileName);
-    let fileContents: string = fs.readFileSync(fullPath, "utf8");
-    let matterResult: matter.GrayMatterFile<string> = matter(fileContents);
+  const countryDirectory = path.join(regionsDirectory, country);
+  const fileNames = fs.readdirSync(countryDirectory);
+  const regionData = fileNames.map((fileName) => {
+    let fullPath = path.join(countryDirectory, fileName);
+    let fileContents = fs.readFileSync(fullPath, "utf8");
+    let matterResult = matter(fileContents);
 
     return {
       ...matterResult.data,

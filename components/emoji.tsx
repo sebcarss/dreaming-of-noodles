@@ -3,10 +3,7 @@ type EmojiProps = {
     symbol: string;
 };
 
-const Emoji = ({
-    label,
-    symbol
-}: EmojiProps) => (
+const Emoji = ({ label, symbol }: EmojiProps) => (
     <span
         data-testid="emoji"
         className="emoji"

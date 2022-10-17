@@ -8,8 +8,8 @@ import PostsList from "../../components/posts-list";
 import ZonePageDescription from "../../components/zonepagedescription";
 import RegionLinkGrid from "../../components/region-link-grid";
 import { getCountryRegionData } from "../../lib/regions";
-import { PostData } from '../../components/PostData';
-import { LinkCardData } from '../../components/LinkCardData';
+import { PostData } from '../../types/PostData';
+import { LinkCardData } from '../../types/LinkCardData';
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
@@ -22,7 +22,7 @@ export async function getStaticProps() {
   });
 
   // Get the country and region data
-  const countryRegionData: { [key: string]: LinkCardData }[] = await getCountryRegionData("japan");
+  const countryRegionData = await getCountryRegionData("japan");
 
   return {
     props: {

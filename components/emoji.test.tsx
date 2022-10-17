@@ -6,14 +6,14 @@ describe('Render Emoji component', () => {
     it('renders emoji symbol', () => {
         render(<Emoji symbol="🍕" />);
 
-        const emoji: string = screen.getByRole('img').textContent;
+        const emoji = screen.getByRole('img').textContent;
         expect(emoji).toBe("🍕");
     });
 
     it('renders aria label when argument passed', () => {
         render(<Emoji symbol="🍕" label="pizza" />);
 
-        const emoji: string = screen.getByTestId('emoji').getAttribute('aria-label');
+        const emoji = screen.getByTestId('emoji').getAttribute('aria-label');
         expect(emoji).toBe("pizza");
     });
 })

@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import ZonePageDescription from "./zonepagedescription";
 
-const title: string = "Japan";
+const title = "Japan";
 
 describe("ZonePageDescription component", () => {
   it("should render a title", () => {

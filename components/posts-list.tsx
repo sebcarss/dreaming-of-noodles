@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'next/image'
-import { PostData } from './PostData';
+import { PostData } from '../types/PostData';
 
 const cardStyle = { width: 'auto', borderRadius: 0}
 

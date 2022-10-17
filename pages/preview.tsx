@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ZonePageDescription from "../components/zonepagedescription";
 import Image from "next/image";
-import { PostData } from '../components/PostData';
+import { PostData } from '../types/PostData';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsFrontMatter();
