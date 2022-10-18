@@ -55,6 +55,7 @@ export default function Post({ postData }) {
       <div>
         <h1>{postData.title}</h1>
         <div>{postData.date}</div>
+        <br />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />  
       </div>
     </div>

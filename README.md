@@ -92,6 +92,9 @@ published: true
 
 You will need to add an image to the S3 bucket `dreamingofnoodles.s3.eu-west-1.amazonaws.com` with the `/images/` prefix. __Remember to make the image public.__
 
+Make sure that the photo you take has an aspect ratio of 3x2 (this can be done in Photos on Mac) and name the photo with the suffix `-3x2.jpg` so that it is picked
+up by the code. Other aspect ratios will become distorted. 
+
 The recipe shoud be written up in the markdown format, which will convert to HTML and be displayed on the site.
 
 ## Adding a Region
