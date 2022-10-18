@@ -45,14 +45,10 @@ export default function Home({ allPostsData, title, preview }: PreviewProps) {
         >
           <p>
             Welcome to Dreaming of Noodles, my personal blog dedicated to my
-            love of Asian food, heavily influenced by the wonderful cuisine of
-            Japan, and in particular, their delicious (oishī) ramen.
-          </p>
-          <p>
-            This blog will see me virtually touring the world through food,
-            starting with Japan, where I will be exploring the regional dishes
-            from the northenmost prefecture, Hokkaido, and working my way down
-            to the southernmost prefecture, Okinawa.
+            love of food, heavily influenced by the wonderful cuisine of
+            Japan, and in particular, their delicious ramen. This blog will see me virtually touring the world through food,
+            creating my own recipes, pitting cooking techniques against each other
+            and generally keeping my stomach happy. 
           </p>
           <p>So come and join me on my culinary adventure!</p>
         </ZonePageDescription>
