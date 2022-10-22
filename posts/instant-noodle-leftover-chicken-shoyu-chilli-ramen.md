@@ -2,7 +2,18 @@
 title: Instant Noodle Leftover Roast Chicken Shoyu Chilli Ramen
 excerpt: "Pimped up some instant noodles with leftover roast chicken, a shoyu tare and a rose harissa chilli oil to give it a kick."
 date: '2022-10-18'
-tags: ['japan', 'ramen', 'instant-noodles', 'shoyu', 'chicken', 'pak choi', 'ramen-egg', 'mushroom', 'leek', 'rose-harissa', 'rayu']
+tags: 
+  - japan
+  - ramen
+  - instant noodles
+  - shoyu
+  - chicken
+  - pak choi
+  - ramen egg
+  - mushroom
+  - leek
+  - rose harissa
+  - rayu
 image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/instant-noodles-leftover-chicken-shoyu-chilli-ramen-3x2.jpg'
 published: true
 ---

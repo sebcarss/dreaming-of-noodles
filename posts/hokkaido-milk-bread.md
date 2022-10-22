@@ -2,7 +2,9 @@
 title: Hokkaido Milk Bread
 excerpt: "Super soft bread from the Northernmost prefecture in Japan, Hokkaido. It's softness is down to an ingredient called Zhang Zhou, which is easy to prep, and a fun way to explore with bread."
 date: '2021-07-13'
-tags: ['bread', 'japan']
+tags: 
+  - bread
+  - japan
 image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/hokkaido-milk-bread.jpeg'
 published: true 
 ---

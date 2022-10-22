@@ -2,7 +2,8 @@
 title: White Tin Loaf With Butter
 excerpt: "This white tin loaf is a classic, and a great way to warm up a cold winter's day."
 date: '2020-06-10'
-tags: ['bread']
+tags: 
+  - bread
 image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/beef-tantanmen-ramen.jpeg'
 published: true
 ---

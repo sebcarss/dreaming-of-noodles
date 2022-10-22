@@ -2,7 +2,17 @@
 title: Instant Noodle Sapporo Ramen with Salmon and Avocado
 excerpt: "Pimped up some instant noodles in the style of Sapporo with grilled salmon and avocado."
 date: '2022-10-13'
-tags: ['japan', 'hokkaido', 'sapporo', 'ramen', 'instant-noodles', 'miso', 'salmon', 'sweetcorn', 'ramen-egg', 'avocado']
+tags: 
+  - japan
+  - hokkaido
+  - sapporo
+  - ramen
+  - instant noodles
+  - miso
+  - salmon
+  - sweetcorn
+  - ramen-egg
+  - avocado
 image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/instant-noodles-sapporo-miso-salmon-avocado-ramen-3x2.jpg'
 published: true
 ---
