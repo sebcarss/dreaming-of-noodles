@@ -1,7 +1,7 @@
 import Japan from "../../pages/japan";
 import renderer from 'react-test-renderer';
-import { LinkCardData } from "../../components/LinkCardData";
-import { PostData } from "../../components/PostData";
+import { LinkCardData } from "../../types/LinkCardData";
+import { PostData } from "../../types/PostData";
 
 const linkData: LinkCardData[] = [
   {

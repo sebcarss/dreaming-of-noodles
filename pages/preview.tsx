@@ -8,13 +8,13 @@ import Image from "next/image";
 import { PostData } from '../types/PostData';
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsFrontMatter();
+  const allPostsFrontMatter = getSortedPostsFrontMatter();
   const title = "Dreaming of Noodles";
   const preview = true;
 
   return {
     props: {
-      allPostsData,
+      allPostsData: allPostsFrontMatter,
       title,
       preview
     },
