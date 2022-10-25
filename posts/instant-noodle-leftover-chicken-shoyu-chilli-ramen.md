@@ -14,7 +14,7 @@ tags:
   - leek
   - rose harissa
   - rayu
-image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/instant-noodles-leftover-chicken-shoyu-chilli-ramen-3x2.jpg'
+image: 'instant-noodles-leftover-chicken-shoyu-chilli-ramen-3x2.jpg'
 published: true
 ---
 

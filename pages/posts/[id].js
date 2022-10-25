@@ -10,9 +10,13 @@ import Image from 'next/image';
 export async function getStaticProps({ params }) {
   const postData = await getPostMatterAndContent(params.id);
 
+  // TODO: This should be done in posts.js instead of here. 
+  const imagePath = process.env.IMAGE_PATH + postData.image;
+
   return {
     props: {
       postData,
+      imagePath
     },
   };
 }
@@ -40,14 +44,14 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, imagePath }) {
   return (
     <Layout title={postData.title} preview={true}>
     <div className="mt-3">
       <div >
         <Image 
           alt="test" 
-          src={postData.image}
+          src={imagePath}
           width={300} 
           height={200}
           layout="responsive" />

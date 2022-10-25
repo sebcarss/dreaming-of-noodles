@@ -4,7 +4,7 @@ excerpt: "A staple in China after a night where too much rice was cooked, this i
 date: '2016-10-24'
 tags: 
   - Chinese
-image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/fried-rice.jpeg'
+image: 'fried-rice.jpeg'
 published: true
 ---
 

@@ -11,7 +11,7 @@ tags:
   - noodles
   - miso
   - tonkotsu
-image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/misogin-sapporo-ramen.jpeg'
+image: 'misogin-sapporo-ramen.jpeg'
 published: true
 ---
 

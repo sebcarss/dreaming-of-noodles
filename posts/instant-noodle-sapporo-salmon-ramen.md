@@ -13,7 +13,7 @@ tags:
   - sweetcorn
   - ramen-egg
   - avocado
-image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/instant-noodles-sapporo-miso-salmon-avocado-ramen-3x2.jpg'
+image: 'instant-noodles-sapporo-miso-salmon-avocado-ramen-3x2.jpg'
 published: true
 ---
 

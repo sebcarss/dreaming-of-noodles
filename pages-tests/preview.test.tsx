@@ -1,5 +1,5 @@
 import Home from "../pages/preview";
-import { PostData } from '../components/PostData';
+import { PostData } from '../types/PostData';
 import renderer from 'react-test-renderer';
 
 // TODO: Move these to __mocks__

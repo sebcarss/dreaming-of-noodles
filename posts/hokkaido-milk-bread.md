@@ -5,7 +5,7 @@ date: '2021-07-13'
 tags: 
   - bread
   - japan
-image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/hokkaido-milk-bread.jpeg'
+image: 'hokkaido-milk-bread.jpeg'
 published: true 
 ---
 

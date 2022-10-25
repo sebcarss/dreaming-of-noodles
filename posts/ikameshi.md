@@ -8,7 +8,7 @@ tags:
   - squid
   - rice
   - japan
-image: 'https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/beef-tantanmen-ramen.jpeg'
+image: 'beef-tantanmen-ramen.jpeg'
 published: true
 ---
 
