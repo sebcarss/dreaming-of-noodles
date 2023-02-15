@@ -33,5 +33,7 @@ export function getCountryRegionData(country: string) {
     };
   });
 
+  console.log(regionData);
+
   return regionData;
 }

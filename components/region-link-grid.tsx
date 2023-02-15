@@ -21,17 +21,13 @@ type RegionLinkGridProps = {
 export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProps) {
   const links = linkData.map(({ region, gridLinkUrl }, index) => {
     return (
-      <Col key={index}>
-        <Link href={gridLinkUrl}>
-          <a>
-            <Card bg="light" style={cardStyle}>
-              <Card.Body>
-                <Card.Title>{region}</Card.Title>
-              </Card.Body>
-            </Card>
-          </a>
-        </Link>
-      </Col>
+      <Link href={gridLinkUrl}>
+        <a>
+          <Col key={index} style={{ textAlign: "center", border: "black 1px solid", fontSize: "1.5rem", backgroundColor: "white" }}>
+            {region}
+          </Col>
+        </a>
+      </Link>
     );
   });
 
@@ -39,7 +35,7 @@ export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProp
     <div>
       <Row className="mt-3">
         <Col>
-          <h2 style={{ textAlign: "center"}}>{heading}</h2>
+          <h2 style={{ textAlign: "center" }}>{heading}</h2>
           <hr />
         </Col>
       </Row>
