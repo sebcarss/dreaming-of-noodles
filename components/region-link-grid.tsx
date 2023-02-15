@@ -21,9 +21,9 @@ type RegionLinkGridProps = {
 export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProps) {
   const links = linkData.map(({ region, gridLinkUrl }, index) => {
     return (
-      <Link href={gridLinkUrl}>
+      <Link key={index} href={gridLinkUrl}>
         <a>
-          <Col key={index} style={{ textAlign: "center", border: "black 1px solid", fontSize: "1.5rem", backgroundColor: "white" }}>
+          <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1.5rem", backgroundColor: "white" }}>
             {region}
           </Col>
         </a>
