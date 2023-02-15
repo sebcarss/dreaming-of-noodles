@@ -34,10 +34,8 @@ export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProp
   return (
     <div>
       <Row className="mt-3">
-        <Col>
           <h2 style={{ textAlign: "center" }}>{heading}</h2>
           <hr />
-        </Col>
       </Row>
       <Row xs={1} sm={2} md={3} lg={4} className="g-1 mt-1">
         {links}

@@ -60,18 +60,18 @@ export default function Japan({ posts, regionLinkData }: JapanProps) {
           </p>
         </ZonePageDescription>
         <Row>
-          <RegionLinkGrid
-            linkData={regionLinkData}
-            heading="Japanese Prefectures"
-          />
+            <RegionLinkGrid
+              linkData={regionLinkData}
+              heading="Japanese Prefectures"
+            />
         </Row>
-        <Row className="mt-3">
+        <Row>
+          <h2 className="text-center mt-3">Japanese Recipes</h2>
+          <hr />
           <Col>
-            <h2 style={{ textAlign: "center" }}>Japanese Recipes</h2>
-            <hr />
+            <PostsList allPostsData={posts} />
           </Col>
         </Row>
-        <PostsList allPostsData={posts} />
       </Container>
     </Layout>
   );

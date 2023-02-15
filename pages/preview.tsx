@@ -3,6 +3,7 @@ import { getSortedPostsFrontMatter } from "../lib/posts";
 import PostsList from "../components/posts-list";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col"
 import ZonePageDescription from "../components/zonepagedescription";
 import Image from "next/image";
 import { PostData } from '../types/PostData';
@@ -55,7 +56,9 @@ export default function Home({ allPostsData, title, preview }: PreviewProps) {
         <Row>
           <h2 className="text-center mt-3">Latest Recipes</h2>
           <hr />
-          <PostsList allPostsData={allPostsData} />
+          <Col>
+            <PostsList allPostsData={allPostsData} />
+          </Col>
         </Row>
       </Container>
     </Layout>

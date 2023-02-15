@@ -187,39 +187,25 @@ exports[`Home component should match the snapshot 1`] = `
           </h2>
           <hr />
           <div
-            className="g-1 row row-cols-lg-3 row-cols-md-2 row-cols-1"
+            className="col"
           >
             <div
-              className="col"
+              className="g-1 row row-cols-lg-3 row-cols-md-2 row-cols-1"
             >
-              <a
-                href="/posts/2019-01-02-hello-world-2"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
+              <div
+                className="col"
               >
-                <div
-                  className="h-100 card bg-dark text-white"
-                  style={
-                    {
-                      "borderRadius": 0,
-                      "width": "auto",
-                    }
-                  }
+                <a
+                  href="/posts/2019-01-02-hello-world-2"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
                 >
-                  <span
+                  <div
+                    className="h-100 card bg-dark text-white"
                     style={
                       {
-                        "background": "none",
-                        "border": 0,
-                        "boxSizing": "border-box",
-                        "display": "block",
-                        "height": "initial",
-                        "margin": 0,
-                        "opacity": 1,
-                        "overflow": "hidden",
-                        "padding": 0,
-                        "position": "relative",
-                        "width": "initial",
+                        "borderRadius": 0,
+                        "width": "auto",
                       }
                     }
                   >
@@ -233,51 +219,36 @@ exports[`Home component should match the snapshot 1`] = `
                           "height": "initial",
                           "margin": 0,
                           "opacity": 1,
+                          "overflow": "hidden",
                           "padding": 0,
-                          "paddingTop": "66.66666666666666%",
+                          "position": "relative",
                           "width": "initial",
                         }
                       }
-                    />
-                    <img
-                      alt="Hello World 2 - thumbnail"
-                      data-nimg="responsive"
-                      decoding="async"
-                      onError={[Function]}
-                      onLoad={[Function]}
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": 0,
+                    >
+                      <span
+                        style={
+                          {
+                            "background": "none",
+                            "border": 0,
+                            "boxSizing": "border-box",
+                            "display": "block",
+                            "height": "initial",
+                            "margin": 0,
+                            "opacity": 1,
+                            "padding": 0,
+                            "paddingTop": "66.66666666666666%",
+                            "width": "initial",
+                          }
                         }
-                      }
-                    />
-                    <noscript>
+                      />
                       <img
                         alt="Hello World 2 - thumbnail"
                         data-nimg="responsive"
                         decoding="async"
-                        loading="lazy"
-                        sizes="100vw"
-                        src="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75"
-                        srcSet="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75 3840w"
+                        onError={[Function]}
+                        onLoad={[Function]}
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style={
                           {
                             "border": "none",
@@ -301,56 +272,71 @@ exports[`Home component should match the snapshot 1`] = `
                           }
                         }
                       />
-                    </noscript>
-                  </span>
-                  <div
-                    className="card-body"
-                  >
+                      <noscript>
+                        <img
+                          alt="Hello World 2 - thumbnail"
+                          data-nimg="responsive"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="100vw"
+                          src="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75"
+                          srcSet="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75 3840w"
+                          style={
+                            {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </noscript>
+                    </span>
                     <div
-                      className="card-title h5"
+                      className="card-body"
                     >
-                      Hello World 2
+                      <div
+                        className="card-title h5"
+                      >
+                        Hello World 2
+                      </div>
+                      <p
+                        className="text-muted card-text"
+                      >
+                        Hello excerpt
+                      </p>
                     </div>
-                    <p
-                      className="text-muted card-text"
-                    >
-                      Hello excerpt
-                    </p>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div
-              className="col"
-            >
-              <a
-                href="/posts/2019-01-01-hello-world-1"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
+                </a>
+              </div>
+              <div
+                className="col"
               >
-                <div
-                  className="h-100 card bg-dark text-white"
-                  style={
-                    {
-                      "borderRadius": 0,
-                      "width": "auto",
-                    }
-                  }
+                <a
+                  href="/posts/2019-01-01-hello-world-1"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
                 >
-                  <span
+                  <div
+                    className="h-100 card bg-dark text-white"
                     style={
                       {
-                        "background": "none",
-                        "border": 0,
-                        "boxSizing": "border-box",
-                        "display": "block",
-                        "height": "initial",
-                        "margin": 0,
-                        "opacity": 1,
-                        "overflow": "hidden",
-                        "padding": 0,
-                        "position": "relative",
-                        "width": "initial",
+                        "borderRadius": 0,
+                        "width": "auto",
                       }
                     }
                   >
@@ -364,51 +350,36 @@ exports[`Home component should match the snapshot 1`] = `
                           "height": "initial",
                           "margin": 0,
                           "opacity": 1,
+                          "overflow": "hidden",
                           "padding": 0,
-                          "paddingTop": "66.66666666666666%",
+                          "position": "relative",
                           "width": "initial",
                         }
                       }
-                    />
-                    <img
-                      alt="Hello World 1 - thumbnail"
-                      data-nimg="responsive"
-                      decoding="async"
-                      onError={[Function]}
-                      onLoad={[Function]}
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style={
-                        {
-                          "border": "none",
-                          "bottom": 0,
-                          "boxSizing": "border-box",
-                          "display": "block",
-                          "height": 0,
-                          "left": 0,
-                          "margin": "auto",
-                          "maxHeight": "100%",
-                          "maxWidth": "100%",
-                          "minHeight": "100%",
-                          "minWidth": "100%",
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "padding": 0,
-                          "position": "absolute",
-                          "right": 0,
-                          "top": 0,
-                          "width": 0,
+                    >
+                      <span
+                        style={
+                          {
+                            "background": "none",
+                            "border": 0,
+                            "boxSizing": "border-box",
+                            "display": "block",
+                            "height": "initial",
+                            "margin": 0,
+                            "opacity": 1,
+                            "padding": 0,
+                            "paddingTop": "66.66666666666666%",
+                            "width": "initial",
+                          }
                         }
-                      }
-                    />
-                    <noscript>
+                      />
                       <img
                         alt="Hello World 1 - thumbnail"
                         data-nimg="responsive"
                         decoding="async"
-                        loading="lazy"
-                        sizes="100vw"
-                        src="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75"
-                        srcSet="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75 3840w"
+                        onError={[Function]}
+                        onLoad={[Function]}
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style={
                           {
                             "border": "none",
@@ -432,24 +403,57 @@ exports[`Home component should match the snapshot 1`] = `
                           }
                         }
                       />
-                    </noscript>
-                  </span>
-                  <div
-                    className="card-body"
-                  >
+                      <noscript>
+                        <img
+                          alt="Hello World 1 - thumbnail"
+                          data-nimg="responsive"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="100vw"
+                          src="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75"
+                          srcSet="/_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fsource.unsplash.com%2Frandom%2F300x200&w=3840&q=75 3840w"
+                          style={
+                            {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </noscript>
+                    </span>
                     <div
-                      className="card-title h5"
+                      className="card-body"
                     >
-                      Hello World 1
+                      <div
+                        className="card-title h5"
+                      >
+                        Hello World 1
+                      </div>
+                      <p
+                        className="text-muted card-text"
+                      >
+                        Hello 2 excerpt
+                      </p>
                     </div>
-                    <p
-                      className="text-muted card-text"
-                    >
-                      Hello 2 excerpt
-                    </p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
