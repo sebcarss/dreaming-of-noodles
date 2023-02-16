@@ -1,9 +1,10 @@
 import Layout from "../components/layout";
 import { getAllTagLinkData } from "../lib/tags";
-import Link from 'next/link'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Emoji from '../components/emoji'
+import Link from 'next/link';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Emoji from '../components/emoji';
 
 export async function getStaticProps({ params }) {
     const tagLinkData = await getAllTagLinkData();
@@ -20,15 +21,17 @@ export default function Tags({ tagLinkData }) {
 
     const tagLinks = tagLinkData.map((tagData, index) => {
         const path = "/tags/" + tagData.slug;
-    
+
         return (
-            <li key={index}>
-                <Link href={path}>
-                    <a>{tagData.title}</a>
-                </Link>
-            </li>
+            <Link key={index} href={path}>
+                <a>
+                    <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
+                        {tagData.title}
+                    </Col>
+                </a>
+            </Link>
         );
-      });
+    });
 
     return (
         <Layout title={title} preview={true}>
@@ -52,9 +55,9 @@ export default function Tags({ tagLinkData }) {
                 <Row id="tags-row">
                     <h2>Tags</h2>
                     <hr />
-                    <ul style={{ listStyleType: "none" }}>
+                    <Row xs={2} sm={4} lg={6} className="g-1 mt-1">
                         {tagLinks}
-                    </ul>
+                    </Row>
                 </Row>
             </Container>
         </Layout>
