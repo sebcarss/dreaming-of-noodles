@@ -47,14 +47,13 @@ export async function getStaticPaths() {
 export default function Post({ postData, imagePath }) {
   return (
     <Layout title={postData.title} preview={true}>
-    <div className="mt-3">
-      <div >
-        <Image 
+    <div className="mt-2">
+      <div className={'image-container'}>
+        <Image
           alt="test" 
           src={imagePath}
-          width={300} 
-          height={200}
-          layout="responsive" />
+          layout="fill"
+          className={'image'}/>
       </div>
       <div>
         <h1>{postData.title}</h1>
