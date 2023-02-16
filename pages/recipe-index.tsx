@@ -6,6 +6,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Emoji from '../components/emoji';
 
+const cardStyle: object = {
+    borderRadius: "0.2em",
+    textAlign: "center",
+    fontSize: "1rem",
+    backgroundColor: "white",
+    width: "auto",
+    boxShadow: "0 5px 10px rgba(0,0,0,.2)",
+    color: 'black'
+  };
+
 export async function getStaticProps({ params }) {
     const tagLinkData = await getAllTagLinkData();
 
@@ -25,7 +35,7 @@ export default function Tags({ tagLinkData }) {
         return (
             <Link key={index} href={path}>
                 <a>
-                    <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
+                    <Col style={cardStyle}>
                         {tagData.title}
                     </Col>
                 </a>
@@ -48,7 +58,7 @@ export default function Tags({ tagLinkData }) {
                     <Row xs={1} sm={2} lg={4} className="g-1 mt-1">
                         <Link href="/japan">
                             <a>
-                                <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
+                                <Col style={cardStyle}>
                                     <Emoji symbol="🇯🇵" label="Japanese flag" />&nbsp;&nbsp;Japanese Recipes
                                 </Col>
                             </a>
