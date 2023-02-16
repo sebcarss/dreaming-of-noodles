@@ -9,6 +9,15 @@ exports[`Japan page should match the snapshot 1`] = `
   >
     <nav
       className="color-nav navbar navbar-expand-lg navbar-dark fixed-top"
+      style={
+        {
+          "boxShadow": "0 10px 10px rgba(0,0,0,.2)",
+          "color": "black",
+          "fontSize": "1rem",
+          "textAlign": "center",
+          "width": "auto",
+        }
+      }
     >
       <a
         className="mx-2 navbar-brand"
@@ -124,9 +133,12 @@ exports[`Japan page should match the snapshot 1`] = `
                   style={
                     {
                       "backgroundColor": "white",
-                      "border": "black 1px solid",
+                      "borderRadius": "0.2em",
+                      "boxShadow": "0 5px 10px rgba(0,0,0,.2)",
+                      "color": "black",
                       "fontSize": "1rem",
                       "textAlign": "center",
+                      "width": "auto",
                     }
                   }
                 >
@@ -143,9 +155,12 @@ exports[`Japan page should match the snapshot 1`] = `
                   style={
                     {
                       "backgroundColor": "white",
-                      "border": "black 1px solid",
+                      "borderRadius": "0.2em",
+                      "boxShadow": "0 5px 10px rgba(0,0,0,.2)",
+                      "color": "black",
                       "fontSize": "1rem",
                       "textAlign": "center",
+                      "width": "auto",
                     }
                   }
                 >
@@ -162,9 +177,12 @@ exports[`Japan page should match the snapshot 1`] = `
                   style={
                     {
                       "backgroundColor": "white",
-                      "border": "black 1px solid",
+                      "borderRadius": "0.2em",
+                      "boxShadow": "0 5px 10px rgba(0,0,0,.2)",
+                      "color": "black",
                       "fontSize": "1rem",
                       "textAlign": "center",
+                      "width": "auto",
                     }
                   }
                 >
@@ -181,9 +199,12 @@ exports[`Japan page should match the snapshot 1`] = `
                   style={
                     {
                       "backgroundColor": "white",
-                      "border": "black 1px solid",
+                      "borderRadius": "0.2em",
+                      "boxShadow": "0 5px 10px rgba(0,0,0,.2)",
+                      "color": "black",
                       "fontSize": "1rem",
                       "textAlign": "center",
+                      "width": "auto",
                     }
                   }
                 >

@@ -9,6 +9,15 @@ exports[`Home component should match the snapshot 1`] = `
   >
     <nav
       className="color-nav navbar navbar-expand-lg navbar-dark fixed-top"
+      style={
+        {
+          "boxShadow": "0 10px 10px rgba(0,0,0,.2)",
+          "color": "black",
+          "fontSize": "1rem",
+          "textAlign": "center",
+          "width": "auto",
+        }
+      }
     >
       <a
         className="mx-2 navbar-brand"
