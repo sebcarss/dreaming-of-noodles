@@ -67,7 +67,6 @@ export default function Japan({ posts, regionLinkData }: JapanProps) {
         </Row>
         <Row>
           <h2 className="text-center mt-3">Japanese Recipes</h2>
-          <hr />
           <Col>
             <PostsList allPostsData={posts} />
           </Col>

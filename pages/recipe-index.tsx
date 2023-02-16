@@ -54,7 +54,6 @@ export default function Tags({ tagLinkData }) {
                 </Row>
                 <Row className="mb-3" id="recipes-by-country-row">
                     <h2>Recipes by Country</h2>
-                    <hr />
                     <Row xs={1} sm={2} lg={3} className="g-1 mt-1">
                         <Link href="/japan">
                             <a>
@@ -74,7 +73,6 @@ export default function Tags({ tagLinkData }) {
                 </Row>
                 <Row id="tags-row">
                     <h2>Tags</h2>
-                    <hr />
                     <Row xs={2} sm={4} lg={6} className="g-1 mt-1">
                         {tagLinks}
                     </Row>

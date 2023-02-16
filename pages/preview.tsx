@@ -55,7 +55,6 @@ export default function Home({ allPostsData, title, preview }: PreviewProps) {
         </ZonePageDescription>
         <Row>
           <h2 className="text-center mt-3">Latest Recipes</h2>
-          <hr />
           <Col>
             <PostsList allPostsData={allPostsData} />
           </Col>
