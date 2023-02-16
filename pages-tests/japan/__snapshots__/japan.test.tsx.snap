@@ -112,7 +112,7 @@ exports[`Japan page should match the snapshot 1`] = `
               <hr />
             </div>
             <div
-              className="g-1 mt-1 row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1"
+              className="g-1 mt-1 row row-cols-lg-6 row-cols-sm-4 row-cols-2"
             >
               <a
                 href="/japan/hokkaido"
@@ -125,7 +125,7 @@ exports[`Japan page should match the snapshot 1`] = `
                     {
                       "backgroundColor": "white",
                       "border": "black 1px solid",
-                      "fontSize": "1.5rem",
+                      "fontSize": "1rem",
                       "textAlign": "center",
                     }
                   }
@@ -144,7 +144,7 @@ exports[`Japan page should match the snapshot 1`] = `
                     {
                       "backgroundColor": "white",
                       "border": "black 1px solid",
-                      "fontSize": "1.5rem",
+                      "fontSize": "1rem",
                       "textAlign": "center",
                     }
                   }
@@ -163,7 +163,7 @@ exports[`Japan page should match the snapshot 1`] = `
                     {
                       "backgroundColor": "white",
                       "border": "black 1px solid",
-                      "fontSize": "1.5rem",
+                      "fontSize": "1rem",
                       "textAlign": "center",
                     }
                   }
@@ -182,7 +182,7 @@ exports[`Japan page should match the snapshot 1`] = `
                     {
                       "backgroundColor": "white",
                       "border": "black 1px solid",
-                      "fontSize": "1.5rem",
+                      "fontSize": "1rem",
                       "textAlign": "center",
                     }
                   }
