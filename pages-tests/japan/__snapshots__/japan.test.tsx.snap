@@ -217,7 +217,7 @@ exports[`Japan page should match the snapshot 1`] = `
                   onMouseEnter={[Function]}
                 >
                   <div
-                    className="h-100 card bg-dark text-white"
+                    className="post-card h-100 card bg-dark text-white"
                     style={
                       {
                         "borderRadius": 0,
@@ -348,7 +348,7 @@ exports[`Japan page should match the snapshot 1`] = `
                   onMouseEnter={[Function]}
                 >
                   <div
-                    className="h-100 card bg-dark text-white"
+                    className="post-card h-100 card bg-dark text-white"
                     style={
                       {
                         "borderRadius": 0,
