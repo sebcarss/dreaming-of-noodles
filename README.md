@@ -116,3 +116,13 @@ gridLinkImage: "/japan-hokkaido.jpg"
 ## Adding Styles to the Markdown
 
 The `global.css` file should be used to update the styles from the Markdown files used for recipes. This is imported in the `_app.js` file so will be utilised across the site. For non-markdown files inline styling of the components can be used.  
+
+
+
+## Colour scheme
+
+- White: `#ffffff`
+- Orange: `#db5004`
+- Yellow: `#f6c41d`
+- Black: `#040404`
+- Background: `#eadbab`

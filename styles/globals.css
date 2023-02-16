@@ -9,11 +9,11 @@ body {
 }
 
 .color-nav {
-  background-color: rgb(0, 2, 1);
+  background-color: #040404;
 }
 
 h1 {
-  color: #000201;
+  color: #040404;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 }
 
 hr {
-  border-top: 1px solid rgb(0, 2, 1);
+  border-top: 1px solid #040404
 }
 
 * {
@@ -42,11 +42,11 @@ table {
 }
 
 table th {
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
 }
 
 table td {
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
 }
 
 .image-container {

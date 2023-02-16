@@ -27,9 +27,9 @@ export default function Navigation({ preview }: NavigationProps) {
         <Navbar.Brand href="/" className="mx-2">Dreaming of Noodles</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link key='0' href='/japan'>Japan</Nav.Link>
-            <Nav.Link key='1' href='/recipe-index'>Recipe Index</Nav.Link>
+          <Nav className="me-auto" style={{ textAlign: "left" }}>
+            <Nav.Link key='0' href='/japan' style={{ color: '#db5004' }}>Japan</Nav.Link>
+            <Nav.Link key='1' href='/recipe-index' style={{ color: '#db5004' }}>Recipe Index</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
