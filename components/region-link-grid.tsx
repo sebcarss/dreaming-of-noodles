@@ -23,7 +23,7 @@ export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProp
     return (
       <Link key={index} href={gridLinkUrl}>
         <a>
-          <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1.5rem", backgroundColor: "white" }}>
+          <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
             {region}
           </Col>
         </a>
@@ -37,7 +37,7 @@ export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProp
           <h2 style={{ textAlign: "center" }}>{heading}</h2>
           <hr />
       </Row>
-      <Row xs={1} sm={2} md={3} lg={4} className="g-1 mt-1">
+      <Row xs={2} sm={4} lg={6} className="g-1 mt-1">
         {links}
       </Row>
     </div>
