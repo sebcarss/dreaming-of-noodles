@@ -5,8 +5,10 @@ import Link from "next/link";
 import { LinkCardData } from "../types/LinkCardData";
 
 const cardStyle: object = {
-  borderRadius: "2em",
+  borderRadius: "0.2em",
   textAlign: "center",
+  fontSize: "1rem",
+  backgroundColor: "white",
   width: "auto",
   boxShadow: "0 5px 10px rgba(0,0,0,.2)",
   color: 'black'
@@ -22,7 +24,7 @@ export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProp
     return (
       <Link key={index} href={gridLinkUrl}>
         <a>
-          <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
+          <Col style={cardStyle}>
             {region}
           </Col>
         </a>
