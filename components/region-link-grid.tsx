@@ -1,7 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import Link from "next/link";
 import { LinkCardData } from "../types/LinkCardData";
 

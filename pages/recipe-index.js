@@ -45,12 +45,22 @@ export default function Tags({ tagLinkData }) {
                 <Row className="mb-3" id="recipes-by-country-row">
                     <h2>Recipes by Country</h2>
                     <hr />
-                    <Link href="/japan">
-                        <a><Emoji symbol="🇯🇵" label="Japanese flag" />&nbsp;&nbsp;Japanese Recipes</a>
-                    </Link>
-                    {/* <Link href="/south-korea">
-                        <a><Emoji symbol="🇰🇷" label="South Korean flag" />&nbsp;&nbsp;South Korean Recipes</a>
-                    </Link> */}
+                    <Row xs={1} sm={2} lg={4} className="g-1 mt-1">
+                        <Link href="/japan">
+                            <a>
+                                <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
+                                    <Emoji symbol="🇯🇵" label="Japanese flag" />&nbsp;&nbsp;Japanese Recipes
+                                </Col>
+                            </a>
+                        </Link>
+                        {/* <Link href="/south-korea">
+                            <a>
+                                <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
+                                    <Emoji symbol="🇰🇷" label="South Korean flag" />&nbsp;&nbsp;South Korean Recipes
+                                </Col>
+                            </a>
+                        </Link> */}
+                    </Row>
                 </Row>
                 <Row id="tags-row">
                     <h2>Tags</h2>
