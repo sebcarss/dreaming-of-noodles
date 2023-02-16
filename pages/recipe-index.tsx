@@ -55,7 +55,7 @@ export default function Tags({ tagLinkData }) {
                 <Row className="mb-3" id="recipes-by-country-row">
                     <h2>Recipes by Country</h2>
                     <hr />
-                    <Row xs={1} sm={2} lg={4} className="g-1 mt-1">
+                    <Row xs={1} sm={2} lg={3} className="g-1 mt-1">
                         <Link href="/japan">
                             <a>
                                 <Col style={cardStyle}>
