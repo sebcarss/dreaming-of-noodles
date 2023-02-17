@@ -55,36 +55,24 @@ export default function Japan({ posts, regionLinkData }: JapanProps) {
             Some of the most famous regional dishes include:
           </p>
           <p>
-            <ul>
-              <li>
-                <p>
-                  <strong>Hokkaido</strong> - Known for its seafood, Hokkaido offers a variety of
-                  dishes featuring fresh ingredients from the sea, such as sushi, sashimi, and
-                  grilled fish.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Kyoto</strong> - Famous for its traditional Japanese cuisine, Kyoto is
-                  home to Kaiseki, a multi-course meal featuring beautifully arranged dishes made
-                  with fresh, local ingredients.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Osaka</strong> - The food capital of Japan, Osaka is famous for its street
-                  food and hearty dishes, such as Takoyaki (octopus balls), Okonomiyaki (savoury
-                  pancakes), and Kushikatsu (deep-fried skewered meat and vegetables).
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Hiroshima</strong> - A city in western Japan, Hiroshima is famous for its
-                  unique take on Okonomiyaki, where the ingredients are layered rather than mixed
-                  together.
-                </p>
-              </li>
-            </ul>
+            <strong>Hokkaido</strong> - Known for its seafood, Hokkaido offers a variety of
+            dishes featuring fresh ingredients from the sea, such as sushi, sashimi, and
+            grilled fish.
+          </p>
+          <p>
+            <strong>Kyoto</strong> - Famous for its traditional Japanese cuisine, Kyoto is
+            home to Kaiseki, a multi-course meal featuring beautifully arranged dishes made
+            with fresh, local ingredients.
+          </p>
+          <p>
+            <strong>Osaka</strong> - The food capital of Japan, Osaka is famous for its street
+            food and hearty dishes, such as Takoyaki (octopus balls), Okonomiyaki (savoury
+            pancakes), and Kushikatsu (deep-fried skewered meat and vegetables).
+          </p>
+          <p>
+            <strong>Hiroshima</strong> - A city in western Japan, Hiroshima is famous for its
+            unique take on Okonomiyaki, where the ingredients are layered rather than mixed
+            together.
           </p>
           <p>
             With so many delicious regional dishes to explore, the culinary adventure in Japan
