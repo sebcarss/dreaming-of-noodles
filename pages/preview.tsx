@@ -45,13 +45,21 @@ export default function Home({ allPostsData, title, preview }: PreviewProps) {
           title={title}
         >
           <p>
-            Welcome to Dreaming of Noodles, my personal blog dedicated to my
-            love of food, heavily influenced by the wonderful cuisine of
-            Japan, and in particular, their delicious ramen. This blog will see me virtually touring the world through food,
-            creating my own recipes, pitting cooking techniques against each other
-            and generally keeping my stomach happy.
+            Welcome to Dreaming of Noodles, a food blog which will take you on a virtual journey through 
+            the flavours of Japan. Starting in the North of Japan, in Hokkaido, I will be exploring
+            each of the country's prefectures and sharing the unique dishes and regional specialities I 
+            discover. 
           </p>
-          <p>So come and join me on my culinary adventure!</p>
+          <p>
+            Through my passion for food and travel, I will bring you on an adventure to discover
+            new flavours and ingredients, while also sharing recipes and tips and tricks for recreating
+            these dishes at home. 
+          </p>
+          <p>
+            So come and join me on my culinary adventure as I dive into the rich culture and history 
+            of Japanese cuisine, one prefecture at a time. Whether you are a seasoned foodie or simply 
+            curious about trying new things, Dreaming of Noodles has something for everyone. 
+          </p>
         </ZonePageDescription>
         <Row>
           <h2 className="text-center mt-3">Latest Recipes</h2>
