@@ -44,6 +44,11 @@ exports[`Japan page should match the snapshot 1`] = `
         <div
           className="me-auto navbar-nav"
           onKeyDown={[Function]}
+          style={
+            {
+              "textAlign": "left",
+            }
+          }
         >
           <a
             className="nav-link"
@@ -51,6 +56,11 @@ exports[`Japan page should match the snapshot 1`] = `
             href="/japan"
             onClick={[Function]}
             onKeyDown={[Function]}
+            style={
+              {
+                "color": "#db5004",
+              }
+            }
           >
             Japan
           </a>
@@ -60,6 +70,11 @@ exports[`Japan page should match the snapshot 1`] = `
             href="/recipe-index"
             onClick={[Function]}
             onKeyDown={[Function]}
+            style={
+              {
+                "color": "#db5004",
+              }
+            }
           >
             Recipe Index
           </a>
@@ -93,10 +108,49 @@ exports[`Japan page should match the snapshot 1`] = `
                 className="row"
               >
                 <p>
-                  This is the starting point on my virtual culinary world tour, and where better to start than in my spiritually-adopted home of Japan! On this journey I will travel along the length of Japan and will research the local cuisines and dishes remotely and try tro recreate the wonderful dishes at home.
+                  Japan is a country of diverse and rich cuisine, with each of its 47 prefectures offering a unique and delicious array of regional dishes. From Hokkaido in the north to Okinawa in the south, there is a world of flavors waiting to be explored.
                 </p>
                 <p>
-                  Japan has 47 prefectures, which you can see in the map. This blog will explore each of the prefectures and the local cuisines and dishes that are found there.
+                  Some of the most famous regional dishes include:
+                </p>
+                <p>
+                  <ul>
+                    <li>
+                      <p>
+                        <strong>
+                          Hokkaido
+                        </strong>
+                         - Known for its seafood, Hokkaido offers a variety of dishes featuring fresh ingredients from the sea, such as sushi, sashimi, and grilled fish.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>
+                          Kyoto
+                        </strong>
+                         - Famous for its traditional Japanese cuisine, Kyoto is home to Kaiseki, a multi-course meal featuring beautifully arranged dishes made with fresh, local ingredients.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>
+                          Osaka
+                        </strong>
+                         - The food capital of Japan, Osaka is famous for its street food and hearty dishes, such as Takoyaki (octopus balls), Okonomiyaki (savoury pancakes), and Kushikatsu (deep-fried skewered meat and vegetables).
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>
+                          Hiroshima
+                        </strong>
+                         - A city in western Japan, Hiroshima is famous for its unique take on Okonomiyaki, where the ingredients are layered rather than mixed together.
+                      </p>
+                    </li>
+                  </ul>
+                </p>
+                <p>
+                  With so many delicious regional dishes to explore, the culinary adventure in Japan never ends. Join us as we travel virtually through Japan, exploring the flavors and culture of each of its prefectures.
                 </p>
               </div>
             </div>
@@ -118,7 +172,6 @@ exports[`Japan page should match the snapshot 1`] = `
               >
                 Japanese Prefectures
               </h2>
-              <hr />
             </div>
             <div
               className="g-1 mt-1 row row-cols-lg-6 row-cols-sm-4 row-cols-2"
@@ -222,7 +275,6 @@ exports[`Japan page should match the snapshot 1`] = `
           >
             Japanese Recipes
           </h2>
-          <hr />
           <div
             className="col"
           >

@@ -53,32 +53,43 @@ export default function Japan({ posts, regionLinkData }: JapanProps) {
           </p>
           <p>
             Some of the most famous regional dishes include:
-
+          </p>
+          <p>
             <ul>
               <li>
-                <strong>Hokkaido:</strong> Known for its seafood, Hokkaido offers a variety of 
-                dishes featuring fresh ingredients from the sea, such as sushi, sashimi, and 
-                grilled fish.
+                <p>
+                  <strong>Hokkaido</strong> - Known for its seafood, Hokkaido offers a variety of
+                  dishes featuring fresh ingredients from the sea, such as sushi, sashimi, and
+                  grilled fish.
+                </p>
               </li>
               <li>
-                <strong>Kyoto:</strong> Famous for its traditional Japanese cuisine, Kyoto is 
-                home to Kaiseki, a multi-course meal featuring beautifully arranged dishes made 
-                with fresh, local ingredients.
+                <p>
+                  <strong>Kyoto</strong> - Famous for its traditional Japanese cuisine, Kyoto is
+                  home to Kaiseki, a multi-course meal featuring beautifully arranged dishes made
+                  with fresh, local ingredients.
+                </p>
               </li>
               <li>
-                <strong>Osaka:</strong> The food capital of Japan, Osaka is famous for its street 
-                food and hearty dishes, such as Takoyaki (octopus balls), Okonomiyaki (savoury 
-                pancakes), and Kushikatsu (deep-fried skewered meat and vegetables).
+                <p>
+                  <strong>Osaka</strong> - The food capital of Japan, Osaka is famous for its street
+                  food and hearty dishes, such as Takoyaki (octopus balls), Okonomiyaki (savoury
+                  pancakes), and Kushikatsu (deep-fried skewered meat and vegetables).
+                </p>
               </li>
               <li>
-                <strong>Hiroshima:</strong> A city in western Japan, Hiroshima is famous for its 
-                unique take on Okonomiyaki, where the ingredients are layered rather than mixed 
-                together.
+                <p>
+                  <strong>Hiroshima</strong> - A city in western Japan, Hiroshima is famous for its
+                  unique take on Okonomiyaki, where the ingredients are layered rather than mixed
+                  together.
+                </p>
               </li>
             </ul>
           </p>
           <p>
-            With so many delicious regional dishes to explore, the culinary adventure in Japan never ends. Join us as we travel virtually through Japan, exploring the flavors and culture of each of its prefectures.
+            With so many delicious regional dishes to explore, the culinary adventure in Japan
+            never ends. Join us as we travel virtually through Japan, exploring the flavors and
+            culture of each of its prefectures.
           </p>
         </ZonePageDescription>
         <Row>

@@ -48,7 +48,7 @@ export default function Home({ allPostsData, title, preview }: PreviewProps) {
             <p>
               Welcome to Dreaming of Noodles, a food blog which will take you on a virtual journey through
               the flavours of Japan. Starting in the North of Japan, in Hokkaido, I will be exploring
-              each of the country's prefectures and sharing the unique dishes and regional specialities I
+              each of the country&apos;s prefectures and sharing the unique dishes and regional specialities I
               discover.
             </p>
             <p>
