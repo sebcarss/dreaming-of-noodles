@@ -20,12 +20,12 @@ type RegionLinkGridProps = {
 };
 
 export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProps) {
-  const links = linkData.map(({ region, gridLinkUrl }, index) => {
+  const links = linkData.map(({ frontmatter }, index) => {
     return (
-      <Link key={index} href={gridLinkUrl}>
+      <Link key={index} href={frontmatter.gridLinkUrl}>
         <a>
           <Col style={cardStyle}>
-            {region}
+            {frontmatter.region}
           </Col>
         </a>
       </Link>

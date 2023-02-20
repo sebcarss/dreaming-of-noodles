@@ -5,28 +5,40 @@ import { PostData } from "../../types/PostData";
 
 const linkData: LinkCardData[] = [
   {
-    country: "Japan",
-    region: "Hokkaido",
-    gridLinkImage: "japan-hokkaido.jpg",
-    gridLinkUrl: "/japan/hokkaido",
+    frontmatter: {
+      country: "Japan",
+      region: "Hokkaido",
+      gridLinkImage: "japan-hokkaido.jpg",
+      gridLinkUrl: "/japan/hokkaido",
+    },
+    content: "\nWelcome to Hokkaido!"
   },
   {
-    country: "Japan",
-    region: "Aomori",
-    gridLinkImage: "japan-aomori.jpg",
-    gridLinkUrl: "/japan/aomori",
+    frontmatter: {
+      country: "Japan",
+      region: "Aomori",
+      gridLinkImage: "japan-aomori.jpg",
+      gridLinkUrl: "/japan/aomori",
+    },
+    content: "\nWelcome to Aomori!"
   },
   {
-    country: "Japan",
-    region: "Iwate",
-    gridLinkImage: "japan-iwate.jpg",
-    gridLinkUrl: "/japan/iwate",
+    frontmatter: {
+      country: "Japan",
+      region: "Iwate",
+      gridLinkImage: "japan-iwate.jpg",
+      gridLinkUrl: "/japan/iwate",
+    },
+    content: "\nWelcome to Iwate!"
   },
   {
-    country: "Japan",
-    region: "Miyagi",
-    gridLinkImage: "japan-miyagi.jpg",
-    gridLinkUrl: "/japan/miyagi",
+    frontmatter: {
+      country: "Japan",
+      region: "Miyagi",
+      gridLinkImage: "japan-miyagi.jpg",
+      gridLinkUrl: "/japan/miyagi",
+    },
+    content: "\nWelcome to Myagi"
   },
 ];
 

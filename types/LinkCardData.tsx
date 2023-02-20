@@ -1,6 +1,4 @@
 export interface LinkCardData {
-    country: string;
-    region: string;
-    gridLinkImage: string;
-    gridLinkUrl: string;
+    frontmatter: { [key: string]: any };
+    content: string;
 }

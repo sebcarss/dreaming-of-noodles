@@ -1,33 +1,46 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import RegionLinkGrid from "./region-link-grid";
+import { LinkCardData } from "../types/LinkCardData";
 
-const testLinkData = [
-    {
+const testLinkData: LinkCardData[] = [
+  {
+    frontmatter: {
       country: "Japan",
       region: "Hokkaido",
       gridLinkImage: "japan-hokkaido.jpg",
       gridLinkUrl: "/japan/hokkaido",
     },
-    {
+    content: "\nWelcome to Hokkaido!"
+  },
+  {
+    frontmatter: {
       country: "Japan",
       region: "Aomori",
       gridLinkImage: "japan-aomori.jpg",
       gridLinkUrl: "/japan/aomori",
     },
-    {
+    content: "\nWelcome to Aomori!"
+  },
+  {
+    frontmatter: {
       country: "Japan",
       region: "Iwate",
       gridLinkImage: "japan-iwate.jpg",
       gridLinkUrl: "/japan/iwate",
     },
-    {
+    content: "\nWelcome to Iwate!"
+  },
+  {
+    frontmatter: {
       country: "Japan",
       region: "Miyagi",
       gridLinkImage: "japan-miyagi.jpg",
       gridLinkUrl: "/japan/miyagi",
     },
-  ];
+    content: "\nWelcome to Myagi"
+  },
+];
 
 describe("ImageLinkGrid component", () => {
     it("should render header", () => {

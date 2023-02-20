@@ -1,29 +1,33 @@
-import { LinkCardData } from "../components/LinkCardData";
+import { LinkCardData } from "../types/LinkCardData";
 import { getCountryRegionData } from "./regions";
 
 jest.mock("fs");
 
 describe("getCountryRegionData", () => {
 
-  let posts: { [key: string]: LinkCardData }[];
+  let posts: LinkCardData[];
 
   beforeAll(() => {
     posts = getCountryRegionData("japan");
   });
 
   it("should return country in region data", () => {
-    expect(posts[0].country).toEqual("Japan");
+    expect(posts[0]?.frontmatter.country).toEqual("Japan");
   });
 
   it("should return region in region data", () => {
-    expect(posts[0].region).toEqual("Hokkaido");
+    expect(posts[0]?.frontmatter.region).toEqual("Hokkaido");
   });
 
   it("should return grid link URL in region data", () => {
-    expect(posts[0].gridLinkUrl).toEqual("/japan/hokkaido");
+    expect(posts[0]?.frontmatter.gridLinkUrl).toEqual("/japan/hokkaido");
   });
 
   it("should return grid link image in region data", () => {
-    expect(posts[0].gridLinkImage).toEqual("/japan-hokkaido.jpg");
+    expect(posts[0]?.frontmatter.gridLinkImage).toEqual("/japan-hokkaido.jpg");
+  });
+
+  it("should return the HTML content from the markdown file", () => {
+    expect(posts[0]?.content).toEqual("Welcome to Hokkaido!");
   });
 });
