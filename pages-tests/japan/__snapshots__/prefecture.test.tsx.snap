@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prefecture page should match the snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <nav
+      className="color-nav navbar navbar-expand-lg navbar-dark fixed-top"
+      style={
+        {
+          "boxShadow": "0 10px 10px rgba(0,0,0,.2)",
+          "color": "black",
+          "fontSize": "1rem",
+          "textAlign": "center",
+          "width": "auto",
+        }
+      }
+    >
+      <a
+        className="mx-2 navbar-brand"
+        href="/"
+      >
+        Dreaming of Noodles
+      </a>
+      <button
+        aria-controls="basic-navbar-nav"
+        aria-label="Toggle navigation"
+        className="navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="basic-navbar-nav"
+      >
+        <div
+          className="me-auto navbar-nav"
+          onKeyDown={[Function]}
+          style={
+            {
+              "textAlign": "left",
+            }
+          }
+        >
+          <a
+            className="nav-link"
+            data-rb-event-key="/japan"
+            href="/japan"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            style={
+              {
+                "color": "#db5004",
+              }
+            }
+          >
+            Japan
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="/recipe-index"
+            href="/recipe-index"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            style={
+              {
+                "color": "#db5004",
+              }
+            }
+          >
+            Recipe Index
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main
+      className="mt-5"
+    >
+      <h1
+        className="mt-3"
+      >
+        Hokkaido
+      </h1>
+    </main>
+  </div>
+  <footer
+    className="mb-3"
+  >
+    <hr />
+    <div
+      className="lead text-center"
+    >
+      Recipes by Seb Carss
+    </div>
+  </footer>
+</div>
+`;
