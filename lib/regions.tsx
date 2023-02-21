@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { LinkCardData } from "../types/LinkCardData";
+import remark from "remark";
+import html from 'remark-html';
 
 const regionsDirectory = path.join(process.cwd(), "regions");
 
@@ -17,28 +19,30 @@ const regionsDirectory = path.join(process.cwd(), "regions");
         gridLinkUrl: '/japan/hokkaido',
         gridLinkImage: '/japan-hokkaido.jpg'
       },
-      content: "\nWelcome to Hokkaido!"
+      content: "<p>Welcome to Hokkaido!</p>"
     }
   ]
  * @param {String} country 
  * @returns 
  */
-export function getCountryRegionData(country: string): LinkCardData[] {
+export async function getCountryRegionData(country: string): Promise<LinkCardData[]> {
   const countryDirectory = path.join(regionsDirectory, country);
-  const fileNames = fs.readdirSync(countryDirectory);
+  const filenames = fs.readdirSync(countryDirectory);
 
-  const regionData = fileNames.map((fileName) => {
+  const regionData: LinkCardData[] = [];
+
+  for (const filename of filenames) {
     try {
-      let fullPath = path.join(countryDirectory, fileName);
-      let fileContents = fs.readFileSync(fullPath, "utf8");
-      let { data: frontmatter, content } = matter(fileContents);
-
-      return { frontmatter, content };
+      const fullPath = path.join(countryDirectory, filename);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
+      const { data, content } = matter(fileContents);
+      const processedContent = await remark().use(html).process(content);
+      const htmlContent = processedContent.toString();
+      regionData.push({ frontmatter: data, content: htmlContent});
     } catch (error) {
       console.error(error);
-      return null;
     }
-  });
+  }
 
   return regionData;
 }

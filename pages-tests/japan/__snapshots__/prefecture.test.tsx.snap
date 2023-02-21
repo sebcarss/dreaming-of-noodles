@@ -89,6 +89,14 @@ exports[`Prefecture page should match the snapshot 1`] = `
       >
         Hokkaido
       </h1>
+      <div
+        dangerouslySetInnerHTML={
+          {
+            "__html": "
+Welcome to Hokkaido!",
+          }
+        }
+      />
     </main>
   </div>
   <footer

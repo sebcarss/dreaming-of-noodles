@@ -6,7 +6,7 @@ import { LinkCardData } from "../../types/LinkCardData";
 
 export async function getStaticPaths() {
 
-    const prefecturesData: LinkCardData[] = getCountryRegionData("japan");
+    const prefecturesData: LinkCardData[] = await getCountryRegionData("japan");
 
     const paths = prefecturesData.map((data) => {
         return {
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const prefecture: LinkCardData = getCountryRegionData("japan").find((data) => {
+    const prefecture: LinkCardData = (await getCountryRegionData("japan")).find((data) => {
         return (data.frontmatter.region).toLowerCase() === params.prefecture;
     });
 
@@ -45,6 +45,7 @@ export default function JapanPrefecture({ regionData }: PrefectureProps) {
   return (
     <Layout title={title} preview={true}>
         <h1 className="mt-3">{prefectureDisplayName}</h1>
+        <div dangerouslySetInnerHTML={{ __html: regionData.content }} />
     </Layout>
   );
 }

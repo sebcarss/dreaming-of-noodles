@@ -19,8 +19,8 @@ published: true
 ---
 
 This tasted amazing! There was a subtle sweetness from the mirin, a gentle saltiness from the soy sauce
-and a warming kick from the rose harissa rayu that gave the broth a deliciousness. The pak choi was 
-steamed along with the leek and this lended a freshness to the dish so it wasn't too heavy for lunch. 
+and a warming kick from the rose harissa rayu that gave the broth a deliciousness. The pak choi was
+steamed along with the leek and this lended a freshness to the dish so it wasn't too heavy for lunch.
 
 ## Ingredients
 

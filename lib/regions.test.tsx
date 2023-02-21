@@ -7,8 +7,8 @@ describe("getCountryRegionData", () => {
 
   let posts: LinkCardData[];
 
-  beforeAll(() => {
-    posts = getCountryRegionData("japan");
+  beforeAll(async () => {
+    posts = await getCountryRegionData("japan");
   });
 
   it("should return country in region data", () => {
@@ -28,6 +28,6 @@ describe("getCountryRegionData", () => {
   });
 
   it("should return the HTML content from the markdown file", () => {
-    expect(posts[0]?.content).toEqual("Welcome to Hokkaido!");
+    expect(posts[0]?.content).toEqual("<p>Welcome to Hokkaido!</p>\n");
   });
 });
