@@ -110,8 +110,12 @@ country: Japan
 region: Hokkaido
 gridLinkUrl: "/japan/hokkaido"
 gridLinkImage: "/japan-hokkaido.jpg"
+splashImage: "aomori-miso-milk-curry-ramen.webp"
+splashImageAlt: "Aomori miso milk curry ramen in the style of a Hokusai painting"
 ---
 ```
+
+The image should be a squad image from DALL-E 2, size 1024 x 1024 and should be webp.
 
 ## Adding Styles to the Markdown
 

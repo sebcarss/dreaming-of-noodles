@@ -79,3 +79,12 @@ table td {
     right: 50%;
   }
 }
+
+.pull-left {
+  float: left;
+  margin-right: "1rem";
+}
+
+.clear-left {
+  clear: left;
+}

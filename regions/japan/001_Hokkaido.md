@@ -3,6 +3,8 @@ country: Japan
 region: Hokkaido
 gridLinkUrl: "/japan/hokkaido"
 gridLinkImage: "/japan-hokkaido.jpg"
+splashImage: "hokkaido-ramen-and-mountains.webp"
+splashImageAlt: "A bowl of ramen sat on some waves in front of the Hokkaido mountains in the style of Hokusai"
 ---
 
 Hokkaido is the nothern most island of Japan and is also one of the colder areas that I will visit on my tour. But with the cold weather comes a treasure trove of delicious seafood and in particular the Red King Crab, the biggest of the crab species and a reason to travel to Hokkaido on its own.

@@ -26,9 +26,9 @@ function readFileSync(path, encoding) {
     } else if (path.includes('missing-frontmatter-excerpt.md')) {
         return "---\ntitle: 'Missing excerpt title'\ndate: '2010-01-02'\ntags: [missing, title]\npublished: true\n---\n\nMissing Title";
     } else if (path.includes('001_Hokkaido')) {
-        return "---\ncountry: Japan\nregion: Hokkaido\ngridLinkUrl: '/japan/hokkaido'\ngridLinkImage: '/japan-hokkaido.jpg'\n---\nWelcome to Hokkaido!"
+        return "---\ncountry: Japan\nregion: Hokkaido\ngridLinkUrl: '/japan/hokkaido'\ngridLinkImage: '/japan-hokkaido.jpg'\nsplashImage: '/splash-image.webp'\nsplashImageAlt: 'Splash Image Alt'\n---\nWelcome to Hokkaido!"
     } else if (path.includes('002_Aomori')) {
-        return "---\ncountry: Japan\nregion: Aomori\ngridLinkUrl: '/japan/aomori'\ngridLinkImage: '/japan-aomori.jpg'\n---\nWelcome to Aomori!"
+        return "---\ncountry: Japan\nregion: Aomori\ngridLinkUrl: '/japan/aomori'\ngridLinkImage: '/japan-aomori.jpg'\nsplashImage: '/splash-image.webp'\nsplashImageAlt: 'Splash Image Alt'\n---\nWelcome to Aomori!"
     } else {
         throw new Error('File not found');
     }
