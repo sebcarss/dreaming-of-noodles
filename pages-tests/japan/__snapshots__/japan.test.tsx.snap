@@ -147,7 +147,23 @@ exports[`Japan page should match the snapshot 1`] = `
         <div
           className="row"
         >
-          <div>
+          <div
+            style={
+              {
+                "backgroundColor": "white",
+                "borderBottom": "1px black solid",
+                "borderTop": "1px black solid",
+                "left": "50%",
+                "marginLeft": "-50vw",
+                "marginRight": "-50vw",
+                "maxWidth": "100vw",
+                "paddingBottom": "10px",
+                "position": "relative",
+                "right": "50%",
+                "width": "100vw",
+              }
+            }
+          >
             <div
               className="mt-3 row"
             >
