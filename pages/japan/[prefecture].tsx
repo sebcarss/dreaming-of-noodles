@@ -47,10 +47,9 @@ export default function JapanPrefecture({ regionData }: PrefectureProps) {
 
     return (
         <Layout title={title} preview={true}>
-            <h1 className="mt-3">{prefectureDisplayName}</h1>
-            <Row>
+            <Row style={{ marginTop: "1rem" }}>
                 <div>
-                    <Col xs={12} md={6} style={{ float: "left", marginRight: "1rem" }}>
+                    <Col xs={12} md={6} style={{ float: "left", marginRight: "1rem", marginTop: "1rem" }}>
                         <Image
                             alt={regionData.frontmatter.splashImageAlt}
                             src={splashImagePath}
@@ -58,6 +57,8 @@ export default function JapanPrefecture({ regionData }: PrefectureProps) {
                             height={640}
                         />
                     </Col>
+                    <h1 className="mt-3">{prefectureDisplayName}</h1>
+                    <hr />
                     <Col dangerouslySetInnerHTML={{ __html: regionData.content }} />
                 </div>
             </Row>

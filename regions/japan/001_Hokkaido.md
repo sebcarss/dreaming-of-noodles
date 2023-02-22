@@ -3,7 +3,7 @@ country: Japan
 region: Hokkaido
 gridLinkUrl: "/japan/hokkaido"
 gridLinkImage: "/japan-hokkaido.jpg"
-splashImage: "hokkaido-ramen-and-mountains.webp"
+splashImage: "hokkaido-ramen-in-style-of-hokusai.webp"
 splashImageAlt: "A bowl of ramen sat on some waves in front of the Hokkaido mountains in the style of Hokusai"
 ---
 
