@@ -49,7 +49,8 @@ export default function JapanPrefecture({ regionData }: PrefectureProps) {
         <Layout title={title} preview={true}>
             <Row style={{ marginTop: "1rem" }}>
                 <div>
-                    <Col xs={12} md={6} style={{ float: "left", marginRight: "1rem", marginTop: "1rem" }}>
+                    <Col xs={12} md={6}
+                        className="prefecture-image">
                         <Image
                             alt={regionData.frontmatter.splashImageAlt}
                             src={splashImagePath}

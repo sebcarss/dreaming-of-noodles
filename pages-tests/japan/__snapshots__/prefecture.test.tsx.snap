@@ -94,14 +94,7 @@ exports[`Prefecture page should match the snapshot 1`] = `
       >
         <div>
           <div
-            className="col-md-6 col-12"
-            style={
-              {
-                "float": "left",
-                "marginRight": "1rem",
-                "marginTop": "1rem",
-              }
-            }
+            className="prefecture-image col-md-6 col-12"
           >
             <span
               style={

@@ -88,3 +88,21 @@ table td {
 .clear-left {
   clear: left;
 }
+
+@media (max-width: 576px) {
+  .prefecture-image {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    right: 50%;
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .prefecture-image {
+    float: left;
+    margin-right: 1rem;
+  }
+}
