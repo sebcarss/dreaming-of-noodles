@@ -33,19 +33,20 @@ export default function RegionLinkGrid({ linkData, heading }: RegionLinkGridProp
   });
 
   return (
-    <div style={{
-      paddingBottom: "10px",
-      width: "100vw",
-      left: "50%",
-      right: "50%",
-      marginLeft: "-50vw",
-      marginRight: "-50vw",
-      position: "relative",
-      backgroundColor: "white",
-      maxWidth: "100vw",
-      borderTop: "1px black solid",
-      borderBottom: "1px black solid"
-    }}>
+    // <div style={{
+    //   paddingBottom: "10px",
+    //   width: "100vw",
+    //   left: "50%",
+    //   right: "50%",
+    //   marginLeft: "-50vw",
+    //   marginRight: "-50vw",
+    //   position: "relative",
+    //   backgroundColor: "white",
+    //   maxWidth: "100vw",
+    //   borderTop: "1px black solid",
+    //   borderBottom: "1px black solid"
+    // }}>
+    <div>
       <Row className="mt-3">
         <h2 style={{ textAlign: "center" }}>{heading}</h2>
       </Row>
