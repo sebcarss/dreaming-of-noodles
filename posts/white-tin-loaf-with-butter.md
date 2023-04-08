@@ -4,6 +4,8 @@ excerpt: "This white tin loaf is a classic, and a great way to warm up a cold wi
 date: '2020-06-10'
 tags: 
   - bread
+  - aomori
+  - japan
 image: 'beef-tantanmen-ramen.jpeg'
 published: true
 ---

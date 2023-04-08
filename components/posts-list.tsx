@@ -20,7 +20,7 @@ export default function PostsLists({ allPostsData }: PostsListsProps) {
       <Col key={index}>
         <Link href={`/posts/${id}`}>
           <a>
-            <Card bg="dark" text="white" style={cardStyle} className="post-card h-100">
+            <Card bg="dark" text="white" border="0" style={cardStyle} className="post-card h-100">
               <Image alt={imageAlt} src={imagePath} layout="responsive" width={300} height={200}/>
               <Card.Body>
                 <Card.Title>{title}</Card.Title>

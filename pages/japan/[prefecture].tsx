@@ -1,10 +1,13 @@
 
 import Layout from "../../components/layout";
 import { getCountryRegionData } from "../../lib/regions";
-import { titleCase } from "../../lib/string-utils";
+import { titleCase, kebabCase } from "../../lib/string-utils";
 import { LinkCardData } from "../../types/LinkCardData";
 import Image from 'next/image';
 import { Row, Col } from 'react-bootstrap';
+import { PostData } from '../../types/PostData';
+import PostsList from "../../components/posts-list";
+import { getSortedPostsFrontMatter } from "../../lib/posts";
 
 export async function getStaticPaths() {
 
@@ -29,18 +32,30 @@ export async function getStaticProps({ params }) {
         return (data.frontmatter.region).toLowerCase() === params.prefecture;
     });
 
+    // Get all posts from the /posts/ directory
+    const allPosts = getSortedPostsFrontMatter();
+
+    // Filter the posts for just the ones that have japan as a tag
+    const filteredPosts = allPosts.filter((post) => {
+        const kebabedTags = post.tags.map((tag) => kebabCase(tag));
+        return kebabedTags.includes(kebabCase(prefecture.frontmatter.region));
+    });
+
+
     return {
         props: {
-            regionData: prefecture
+            regionData: prefecture,
+            posts: filteredPosts
         }
     }
 }
 
 type PrefectureProps = {
     regionData: LinkCardData;
+    posts: PostData[];
 }
 
-export default function JapanPrefecture({ regionData }: PrefectureProps) {
+export default function JapanPrefecture({ regionData, posts }: PrefectureProps) {
     const prefectureDisplayName = titleCase(regionData.frontmatter.region);
     const title = `${prefectureDisplayName} | Japan | Dreaming of Noodles`;
     const splashImagePath = "https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/" + regionData.frontmatter.splashImage;
@@ -62,6 +77,12 @@ export default function JapanPrefecture({ regionData }: PrefectureProps) {
                     <hr />
                     <Col dangerouslySetInnerHTML={{ __html: regionData.content }} />
                 </div>
+            </Row>
+            <Row>
+                <h2 className="text-center mt-3">{prefectureDisplayName} Recipes</h2>
+                <Col>
+                    <PostsList allPostsData={posts} />
+                </Col>
             </Row>
         </Layout>
     );
