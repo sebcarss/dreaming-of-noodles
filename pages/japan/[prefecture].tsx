@@ -29,26 +29,26 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const prefecture: LinkCardData = (await getCountryRegionData("japan")).find((data) => {
-        return (data.frontmatter.region).toLowerCase() === params.prefecture;
+      return (data.frontmatter.region).toLowerCase() === params.prefecture;
     });
-
+  
     // Get all posts from the /posts/ directory
-    const allPosts = getSortedPostsFrontMatter();
-
+    const allPosts = await getSortedPostsFrontMatter();
+  
     // Filter the posts for just the ones that have japan as a tag
     const filteredPosts = allPosts.filter((post) => {
-        const kebabedTags = post.tags.map((tag) => kebabCase(tag));
-        return kebabedTags.includes(kebabCase(prefecture.frontmatter.region));
+      const kebabedTags = post.tags.map((tag) => kebabCase(tag));
+      return kebabedTags.includes(kebabCase(prefecture.frontmatter.region));
     });
-
-
+  
     return {
-        props: {
-            regionData: prefecture,
-            posts: filteredPosts
-        }
-    }
-}
+      props: {
+        regionData: prefecture,
+        posts: filteredPosts
+      }
+    };
+  }
+  
 
 type PrefectureProps = {
     regionData: LinkCardData;

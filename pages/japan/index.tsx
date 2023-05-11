@@ -13,7 +13,8 @@ import { LinkCardData } from '../../types/LinkCardData';
 
 export async function getStaticProps() {
   // Get all posts from the /posts/ directory
-  const allPosts = getSortedPostsFrontMatter();
+  const allPostsPromise = getSortedPostsFrontMatter();
+  const allPosts = await allPostsPromise;
 
   // Filter the posts for just the ones that have japan as a tag
   const japanFilteredPosts = allPosts.filter((post) => {

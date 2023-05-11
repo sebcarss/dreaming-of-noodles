@@ -11,7 +11,7 @@ import { titleCase, kebabCase } from "./string-utils";
  * @returns a unique map of tags names and their count
  */
 export async function getAllTags() {
-  const allPostsData = getSortedPostsFrontMatter();
+  const allPostsData = await getSortedPostsFrontMatter();
 
   let tags = {};
   allPostsData.forEach((postData) => {
@@ -35,6 +35,7 @@ export async function getAllTags() {
 
   return orderedTags;
 }
+
 
 /**
  * Creates an object from all the unique tags that are found in the posts within 
