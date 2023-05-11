@@ -20,7 +20,8 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async (context)
   const title = "Dreaming of Noodles";
   const { headers } = req || {};
   const preview = headers?.['x-mode-preview'] === 'true';
-  const allPostsFrontMatter = getSortedPostsFrontMatter();
+  const allPostsFrontMatterPromise = getSortedPostsFrontMatter();
+  const allPostsFrontMatter = await allPostsFrontMatterPromise;
 
   return {
     props: {
@@ -31,7 +32,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async (context)
   };
 };
 
-export default function Home({ allPostsData, title, preview }: HomeProps) {
+const Home: React.FC<HomeProps> = ({ title, preview, allPostsData }) => {
   return (
     <Layout title={title} preview={preview} >
       <div className="d-flex justify-content-center">
@@ -88,4 +89,6 @@ export default function Home({ allPostsData, title, preview }: HomeProps) {
 
     </Layout>
   );
-}
+};
+
+export default Home;
