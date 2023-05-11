@@ -147,23 +147,7 @@ exports[`Japan page should match the snapshot 1`] = `
         <div
           className="row"
         >
-          <div
-            style={
-              {
-                "backgroundColor": "white",
-                "borderBottom": "1px black solid",
-                "borderTop": "1px black solid",
-                "left": "50%",
-                "marginLeft": "-50vw",
-                "marginRight": "-50vw",
-                "maxWidth": "100vw",
-                "paddingBottom": "10px",
-                "position": "relative",
-                "right": "50%",
-                "width": "100vw",
-              }
-            }
-          >
+          <div>
             <div
               className="mt-3 row"
             >
@@ -294,7 +278,7 @@ exports[`Japan page should match the snapshot 1`] = `
                   onMouseEnter={[Function]}
                 >
                   <div
-                    className="post-card h-100 card bg-dark text-white"
+                    className="post-card h-100 card bg-dark text-white border-0"
                     style={
                       {
                         "borderRadius": 0,
@@ -425,7 +409,7 @@ exports[`Japan page should match the snapshot 1`] = `
                   onMouseEnter={[Function]}
                 >
                   <div
-                    className="post-card h-100 card bg-dark text-white"
+                    className="post-card h-100 card bg-dark text-white border-0"
                     style={
                       {
                         "borderRadius": 0,
