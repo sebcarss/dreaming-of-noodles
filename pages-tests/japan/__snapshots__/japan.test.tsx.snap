@@ -168,6 +168,7 @@ exports[`Japan page should match the snapshot 1`] = `
                 href="/japan/hokkaido"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
+                onTouchStart={[Function]}
               >
                 <div
                   className="col"
@@ -190,6 +191,7 @@ exports[`Japan page should match the snapshot 1`] = `
                 href="/japan/aomori"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
+                onTouchStart={[Function]}
               >
                 <div
                   className="col"
@@ -212,6 +214,7 @@ exports[`Japan page should match the snapshot 1`] = `
                 href="/japan/iwate"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
+                onTouchStart={[Function]}
               >
                 <div
                   className="col"
@@ -234,6 +237,7 @@ exports[`Japan page should match the snapshot 1`] = `
                 href="/japan/miyagi"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
+                onTouchStart={[Function]}
               >
                 <div
                   className="col"
@@ -276,6 +280,7 @@ exports[`Japan page should match the snapshot 1`] = `
                   href="/posts/2019-01-02-hello-world-2"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
+                  onTouchStart={[Function]}
                 >
                   <div
                     className="post-card h-100 card bg-dark text-white border-0"
@@ -407,6 +412,7 @@ exports[`Japan page should match the snapshot 1`] = `
                   href="/posts/2019-01-01-hello-world-1"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
+                  onTouchStart={[Function]}
                 >
                   <div
                     className="post-card h-100 card bg-dark text-white border-0"

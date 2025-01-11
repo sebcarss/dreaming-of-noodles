@@ -6,7 +6,7 @@ This is my personal recipe blog and food diary that allows me to capture my thou
 ---
 ```bash
 # Install the node_modules before you start your development server
-npm run install
+npm install
 ```
 Please ensure you are using the following versions of these libraries:
 
