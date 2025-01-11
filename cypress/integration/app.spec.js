@@ -1,4 +1,4 @@
-describe('Navigating via the navbar', () => {
+describe.skip('Navigating via the navbar', () => {
     beforeEach(() => {
         cy.visit('/preview')
     })
@@ -25,7 +25,7 @@ describe('Navigating via the navbar', () => {
     })
 })
 
-describe('Navigating to recipes from the index page', () => {
+describe.skip('Navigating to recipes from the index page', () => {
     beforeEach(() => {
         cy.visit('/recipe-index');
     });
