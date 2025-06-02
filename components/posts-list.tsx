@@ -19,7 +19,7 @@ export default function PostsLists({ allPostsData }: PostsListsProps) {
 
     return (
       <Col key={index}>
-        <Link href={`/posts/${id}`}>
+        <Link href={`/posts/${id}`} passHref>
           <Card bg="dark" text="white" border="0" style={cardStyle} className="post-card h-100">
             <Image alt={imageAlt} src={imagePath} width={300} height={200} style={{ width: '100%', height: 'auto' }} />
             <Card.Body>

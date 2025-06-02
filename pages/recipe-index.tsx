@@ -33,7 +33,7 @@ export default function Tags({ tagLinkData }) {
         const path = "/tags/" + tagData.slug;
 
         return (
-            <Link key={index} href={path}>
+            <Link key={index} href={path} passHref>
                 <Col style={cardStyle}>
                     {tagData.title}
                 </Col>
@@ -53,7 +53,7 @@ export default function Tags({ tagLinkData }) {
                 <Row className="mb-3" id="recipes-by-country-row">
                     <h2>Recipes by Country</h2>
                     <Row xs={1} sm={2} lg={3} className="g-1 mt-1">
-                        <Link href="/japan">
+                        <Link href="/japan" passHref>
                             <Col style={cardStyle}>
                                 <Emoji symbol="🇯🇵" label="Japanese flag" />&nbsp;&nbsp;Japanese Recipes
                             </Col>
