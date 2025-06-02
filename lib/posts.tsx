@@ -40,7 +40,7 @@ export async function getSortedPostsFrontMatter(): Promise<PostData[]> {
     const fileContents = await fs.promises.readFile(fullPath, "utf8");
     const { data } = matter(fileContents) as GrayMatterFile<string>;
 
-    const imagePath = process.env.IMAGE_PATH + data.image;
+    const imagePath = data.image;
 
     return {
       id,

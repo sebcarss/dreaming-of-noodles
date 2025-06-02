@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 import { PostData } from '../types/PostData';
 import Layout from "../components/layout";
 import Container from 'react-bootstrap/Container';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ZonePageDescription from "../components/zonepagedescription";

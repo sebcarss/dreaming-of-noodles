@@ -1,9 +1,8 @@
-
 import Layout from "../../components/layout";
 import { getCountryRegionData } from "../../lib/regions";
 import { titleCase, kebabCase } from "../../lib/string-utils";
 import { LinkCardData } from "../../types/LinkCardData";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Row, Col } from 'react-bootstrap';
 import { PostData } from '../../types/PostData';
 import PostsList from "../../components/posts-list";

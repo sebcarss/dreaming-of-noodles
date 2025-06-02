@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostMatterAndContent } from "../../lib/posts";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 /**
  *
@@ -10,13 +10,9 @@ import Image from "next/legacy/image";
 export async function getStaticProps({ params }) {
   const postData = await getPostMatterAndContent(params.id);
 
-  // TODO: This should be done in posts.js instead of here. 
-  const imagePath = process.env.IMAGE_PATH + postData.image;
-
   return {
     props: {
-      postData,
-      imagePath
+      postData
     },
   };
 }
@@ -44,15 +40,16 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData, imagePath }) {
+export default function Post({ postData }) {
   return (
     <Layout title={postData.title} preview={true}>
     <div className="mt-2">
       <div className={'image-container'}>
         <Image
           alt="test" 
-          src={imagePath}
-          layout="fill"
+          src={`https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/${postData.image}`}
+          width={500}
+          height={500}  
           className={'image'}/>
       </div>
       <div>
