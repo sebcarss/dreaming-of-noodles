@@ -10,9 +10,9 @@ npm install
 ```
 Please ensure you are using the following versions of these libraries:
 
-- Node version: 17.5.0
-- NPM version: 8.4.1
-- TypeScript version: 4.8.3
+- React version: 18
+- Next.js version: 15
+- Node version: 18
 
 ## Local development 
 ---

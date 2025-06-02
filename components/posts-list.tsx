@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from "next/image"
 import { PostData } from '../types/PostData';
+import { getImagePath } from '../lib/image-utils'
 
 const cardStyle = { width: 'auto', borderRadius: 0 }
 
@@ -12,9 +13,8 @@ type PostsListsProps = {
 }
 
 export default function PostsLists({ allPostsData }: PostsListsProps) {
-  const imageDomain = "https://dreamingofnoodles.s3.eu-west-1.amazonaws.com";
   const posts = allPostsData.map(({ id, excerpt, title, image }, index) => {
-    const imagePath = `${imageDomain}/images/${image}`;
+    const imagePath = getImagePath(image);
     const imageAlt = `${title} - thumbnail`;
 
     return (

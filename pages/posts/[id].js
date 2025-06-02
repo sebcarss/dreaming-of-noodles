@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostMatterAndContent } from "../../lib/posts";
 import Image from "next/image";
+import { getImagePath } from "../../lib/image-utils";
 
 /**
  *
@@ -41,24 +42,27 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
+  const imagePath = getImagePath(postData.image); // <-- Use utility function
+
   return (
     <Layout title={postData.title} preview={true}>
-    <div className="mt-2">
-      <div className={'image-container'}>
-        <Image
-          alt="test" 
-          src={`https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/${postData.image}`}
-          width={500}
-          height={500}  
-          className={'image'}/>
+      <div className="mt-2">
+        <div className={'image-container'}>
+          <Image
+            alt="test"
+            src={imagePath}
+            width={500}
+            height={500}
+            className={'image'}
+          />
+        </div>
+        <div>
+          <h1>{postData.title}</h1>
+          <div>{postData.date}</div>
+          <br />
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </div>
       </div>
-      <div>
-        <h1>{postData.title}</h1>
-        <div>{postData.date}</div>
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />  
-      </div>
-    </div>
     </Layout>
   );
 }
