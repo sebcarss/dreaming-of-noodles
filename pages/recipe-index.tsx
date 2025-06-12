@@ -14,7 +14,7 @@ const cardStyle: object = {
     width: "auto",
     boxShadow: "0 5px 10px rgba(0,0,0,.2)",
     color: 'black'
-  };
+};
 
 export async function getStaticProps({ params }) {
     const tagLinkData = await getAllTagLinkData();
@@ -33,12 +33,10 @@ export default function Tags({ tagLinkData }) {
         const path = "/tags/" + tagData.slug;
 
         return (
-            <Link key={index} href={path}>
-                <a>
-                    <Col style={cardStyle}>
-                        {tagData.title}
-                    </Col>
-                </a>
+            <Link key={index} href={path} passHref>
+                <Col style={cardStyle}>
+                    {tagData.title}
+                </Col>
             </Link>
         );
     });
@@ -55,20 +53,11 @@ export default function Tags({ tagLinkData }) {
                 <Row className="mb-3" id="recipes-by-country-row">
                     <h2>Recipes by Country</h2>
                     <Row xs={1} sm={2} lg={3} className="g-1 mt-1">
-                        <Link href="/japan">
-                            <a>
-                                <Col style={cardStyle}>
-                                    <Emoji symbol="🇯🇵" label="Japanese flag" />&nbsp;&nbsp;Japanese Recipes
-                                </Col>
-                            </a>
+                        <Link href="/japan" passHref>
+                            <Col style={cardStyle}>
+                                <Emoji symbol="🇯🇵" label="Japanese flag" />&nbsp;&nbsp;Japanese Recipes
+                            </Col>
                         </Link>
-                        {/* <Link href="/south-korea">
-                            <a>
-                                <Col style={{ textAlign: "center", border: "black 1px solid", fontSize: "1rem", backgroundColor: "white" }}>
-                                    <Emoji symbol="🇰🇷" label="South Korean flag" />&nbsp;&nbsp;South Korean Recipes
-                                </Col>
-                            </a>
-                        </Link> */}
                     </Row>
                 </Row>
                 <Row id="tags-row">

@@ -1,13 +1,13 @@
-
 import Layout from "../../components/layout";
 import { getCountryRegionData } from "../../lib/regions";
 import { titleCase, kebabCase } from "../../lib/string-utils";
 import { LinkCardData } from "../../types/LinkCardData";
-import Image from 'next/image';
+import Image from "next/image";
 import { Row, Col } from 'react-bootstrap';
 import { PostData } from '../../types/PostData';
 import PostsList from "../../components/posts-list";
 import { getSortedPostsFrontMatter } from "../../lib/posts";
+import { getImagePath } from "../../lib/image-utils";
 
 export async function getStaticPaths() {
 
@@ -58,7 +58,7 @@ type PrefectureProps = {
 export default function JapanPrefecture({ regionData, posts }: PrefectureProps) {
     const prefectureDisplayName = titleCase(regionData.frontmatter.region);
     const title = `${prefectureDisplayName} | Japan | Dreaming of Noodles`;
-    const splashImagePath = "https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/" + regionData.frontmatter.splashImage;
+    const splashImagePath = getImagePath(regionData.frontmatter.splashImage);
 
     return (
         <Layout title={title} preview={true}>

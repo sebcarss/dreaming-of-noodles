@@ -2,12 +2,13 @@ import { GetServerSideProps } from 'next';
 import { PostData } from '../types/PostData';
 import Layout from "../components/layout";
 import Container from 'react-bootstrap/Container';
-import Image from 'next/image';
+import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ZonePageDescription from "../components/zonepagedescription";
 import PostsList from "../components/posts-list";
 import { getSortedPostsFrontMatter } from "../lib/posts";
+import { getImagePath } from "../lib/image-utils";
 
 type HomeProps = {
   title: string;
@@ -33,12 +34,14 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async (context)
 };
 
 const Home: React.FC<HomeProps> = ({ title, preview, allPostsData }) => {
+  const image = getImagePath("dreaming-of-noodles.png");
+
   return (
     <Layout title={title} preview={preview} >
       <div className="d-flex justify-content-center">
         <Image
           alt="dreaming of noodles logo"
-          src="https://dreamingofnoodles.s3.eu-west-1.amazonaws.com/images/dreaming-of-noodles.png"
+          src={image}
           width={320}
           height={320}
           layout="fixed" />
