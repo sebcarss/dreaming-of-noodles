@@ -9,8 +9,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch",
-    "cypress": "cypress open"
+    "test": "jest --watch"
   },
   "dependencies": {
     "@types/node": "^18.7.18",
@@ -29,7 +28,6 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "babel-jest": "^27.0.6",
-    "cypress": "^14.4.0",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
     "jest-environment-jsdom": "^29.0.3",

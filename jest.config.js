@@ -1,4 +1,4 @@
 module.exports = {
     testEnvironment: 'jest-environment-jsdom',
-    testPathIgnorePatterns: ['/node_modules/', '/cypress/'],
+    testPathIgnorePatterns: ['/node_modules/'],
 }
