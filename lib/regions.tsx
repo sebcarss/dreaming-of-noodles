@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { LinkCardData } from "../types/LinkCardData";
-import remark from "remark";
+import { remark } from "remark";
 import html from 'remark-html';
 
 const regionsDirectory = path.join(process.cwd(), "regions");
